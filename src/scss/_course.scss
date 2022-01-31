@@ -1,0 +1,50 @@
+$bg : #f6f3f1;
+$course-width: 1024px;
+.p-course{
+    &__one-month{
+        width: $course-width;
+        height: 528px;
+        background-color: $bg;
+        margin: 0 auto;
+    }
+    &__two-month{
+        width: $course-width;
+        background-color: $bg;
+    }
+    &__after{
+        width: $course-width;
+        background-color: $bg;
+    }
+    &__ballon{
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 0;
+        width: 725px;
+        font-size: 40px;
+        color: #ffffff;
+        background: #a28b76;
+        height: 80px;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -15px;
+            border: 15px solid transparent;
+            border-top: 15px solid #a28b76;
+        }
+        &--outer{
+            display: table;
+            text-align: center;
+            height: inherit;
+        }
+        &--inner{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        > p{
+            text-align:center;
+            padding: 10px 0;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.p-top {
+    //background-color: $top-background;
+    //padding-bottom: 44px;
+    height: 1550px;
+    
+    padding-top: 95px;
+    padding-bottom: 75px;
+    
+    &__inner {
+      max-width: $inner-width-pc;
+      //width: 100%;
+      margin: 0 auto;
+      //padding-top: 92px;
+    }
+
+    &__title-text{
+      font-size: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      &--after{
+        color: #e94d84;
+      }
+    }
+    &__subtitle-text{
+      font-size: 30px;
+      text-align: center;
+      color: #8f8f8f;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  
+    &__foot {
+      display: inline-block;
+      width: 420px;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+          background-color: #FFFFFF;
+      color: #000000;
+      box-shadow: 0px 5px 10px #00000026;
+      border: 2px solid $color-key;
+      border-radius: 6px;
+      font-size: 18px;
+  
+      svg {
+  
+        color: blue;
+        background-color: purple;
+      }
+    }
+  
+    &__top {
+  
+    }
+  
+    &__button {
+      width: 265px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 5px;
+      padding-left: 70px;
+      padding-right: 70px;
+  
+      & + & {
+        margin-left: 3px;
+      }
+  
+      &--twitter {
+        position: relative;
+        width: 34px;
+        height: 34px;
+        margin-top: 13px;
+        margin-bottom: 13px;  
+  
+        &::before {
+          position: absolute;
+          content: "";
+          top: 0px;
+          left: -10px;
+          z-index: 0;
+          background-color: #1DA1F2;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+        }
+  
+        &::after {
+          position: absolute;
+          font-family: "Font Awesome 5 Brands";
+          font-weight: 900;
+          content: '\f099';
+          top: -11px;
+          left: -2px;
+          z-index: 100;
+          color: #FFFFFF;
+        }
+      }
+  
+      &--facebook {
+        width: 34px;
+        height: 34px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+      }
+  
+      &--line {      
+        width: 34px;
+        height: 34px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+      }
+    }
+  
+    &__image {
+      
+    }
+
+    &__img-outer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__link {
+      line-height: 60px;
+      font-size: 14px;
+    }
+  
+    &__text {
+      padding-top: 40px;
+      font-size: 15px;
+      line-height: 1.87;
+    }
+  }

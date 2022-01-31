@@ -1,0 +1,47 @@
+.p-motto{
+    height: 504px;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    &__img{
+        //position: relative;
+        display: block;
+        height: 504px;
+        width: 100%;
+        object-fit: cover;
+        opacity: .6;
+        //object-position: top 30px ;
+    }
+    &__img-text{
+        position: absolute;
+        top:0;
+        left:50%;
+        text-align: center;
+        background-color: rgba($color: #ffffff, $alpha: .7);
+        transform: translate(-50%, 50%);
+    }
+    &__title{
+        font-size: 39.18px;
+    }
+    &__arrow{
+        height: 17px;
+        width: 40px;
+        background-color: #e94d84;
+        position:  relative;
+        //margin-top: 20px;
+        display: inline-block;
+        top:-5px;
+        margin-right: 32.0px;
+        &::after{
+            content:  '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 18.5px 0 18.5px 32.0px;
+            border-color: transparent transparent transparent #e94d84;
+            position:  absolute;
+            top: -60%;
+            left: 100%;
+        }
+    }
+}

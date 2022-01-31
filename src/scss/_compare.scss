@@ -1,0 +1,14 @@
+.p-compare{
+    height: 652px;
+    background-color: #f6f3f1;
+    text-align: center;
+    &__catch{
+        padding-top: 57px;
+        &--main-catch{
+            font-size: 40px;
+        }
+        &--topic{
+            font-size: 60px;
+        }
+    }
+}
