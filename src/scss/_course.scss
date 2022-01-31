@@ -6,14 +6,36 @@ $course-width: 1024px;
         height: 528px;
         background-color: $bg;
         margin: 0 auto;
+        &--area{
+            width: 725px;
+            margin: 0 auto;
+        }
     }
     &__two-month{
         width: $course-width;
+        height: 612px;
         background-color: $bg;
+        margin: 0 auto;
+        margin-top: 70px;
+        &--area{
+            width: 725px;
+            margin: 0 auto;
+        }
     }
     &__after{
         width: $course-width;
+        height: 448px;
         background-color: $bg;
+        margin: 0 auto;
+        margin-top: 70px;
+        &--area{
+            width: 725px;
+            margin: 0 auto;
+        }
+    }
+    &__limit{
+        font-size: 20px;
+        color: #000000;
     }
     &__ballon{
         position: relative;
@@ -45,6 +67,51 @@ $course-width: 1024px;
         > p{
             text-align:center;
             padding: 10px 0;
+        }
+    }
+    &__price{
+        font-size: 81.85px;
+        color: #e94d84;
+        &--tax{
+            font-size: 41px;
+        }
+        &--sheet{
+            font-size: 41px;
+        }
+        &--menu{
+            margin: 0 auto;
+            color: black;
+            width: 973px;
+            height: 63px;
+            font-size: 30px;
+            background-color: #ffffff;
+            
+            margin-top: 16px ;
+            &:nth-child(1){
+            }
+        }
+    }
+    &__after-follow{
+        width: $course-width;
+        height: 506px;
+        background-color: $bg;
+        margin: 0 auto;
+        &--title{
+            
+        }
+    }
+    &__table{
+        margin: 0 auto;
+        padding-top: 17px;
+        &--header{
+            height: 34px;
+            width: 204px;
+            background-color: #a28b76;
+        }
+        &--item{
+            text-align: left;
+            padding-left: 24px;
+            font-size: 20px;
         }
     }
 }
