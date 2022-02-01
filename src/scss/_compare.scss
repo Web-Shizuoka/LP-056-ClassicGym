@@ -11,4 +11,19 @@
             font-size: 60px;
         }
     }
+    &__case{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 30px;
+    }
+    &__description{
+        align-items: center;
+        width: 1200px;
+        margin: 0 auto;
+        &--child{
+
+            text-align: left;
+        }
+    }
 }

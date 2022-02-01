@@ -8,5 +8,24 @@
         font-size: 38px;
         padding-top: 47px;
         padding-bottom: 67px;
+        display: flex;
+        align-items: center;
+        color: #a28b76;
+        &::before{
+          content: "";
+          flex-grow: 1;
+          height: 1px; /* 線の太さを変えたいときはここを変える */
+          background: #a28b76; /* 線の色を変えたいときはここを変える */
+          margin-left: 300px;
+          margin-right: 43px;
+        }
+        &::after{
+          content: "";
+          flex-grow: 1;
+          height: 1px; /* 線の太さを変えたいときはここを変える */
+          background: #a28b76; /* 線の色を変えたいときはここを変える */
+          margin-right: 300px; 
+          margin-left: 43px;
+        }
     }
 }
