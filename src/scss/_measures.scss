@@ -26,4 +26,26 @@
       color: #a28b76;
     }
   }
+  &__items {
+    //width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  &__item {
+    width: 190px;
+    height: 90px;
+    border: 1px solid #a28b76;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+  }
+  &__area {
+    padding-top: 15px;
+    margin: 0 auto;
+  }
 }
