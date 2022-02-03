@@ -1,4 +1,30 @@
-.p-graph{
-    height: 1016px;
-    background-color: #fefefe;
+.p-graph {
+  height: 1016px;
+  background-color: #fefefe;
+  &__backgrpund {
+    width: 100%;
+    object-fit: none;
+    object-position: 0% 0%;
+    position: relative;
+  }
+  &__area {
+    position: relative;
+    top: 0;
+    &--text {
+      position: absolute;
+      text-align: center;
+      top: 69px;
+      left: 399px;
+      font-size: 24.01px;
+      line-height: 2;
+    }
+
+    &--img {
+      margin-top: 33px;
+      background-color: #ffffff;
+      > img {
+        margin: 20px;
+      }
+    }
+  }
 }
