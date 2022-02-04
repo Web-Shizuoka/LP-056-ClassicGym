@@ -6,18 +6,83 @@
   margin-bottom: 28px;
   &__question {
     height: 665px;
+    position: relative;
     > img {
       width: 100%;
       object-fit: none;
       object-position: 100% 0;
+      position: relative;
+    }
+    &--content {
+      position: absolute;
+      top: 7%;
+      left: 15%;
+    }
+    &--title {
+      font-size: 36px;
+      font-family: serif;
+      color: #a28b76;
+      font-weight: bold;
+    }
+    &--line {
+      background-color: #a28b76;
+      width: 100px;
+      height: 10px;
+      margin: 0 auto;
+    }
+    &--text {
+      font-size: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    &--icon {
+      padding-right: 15px;
+    }
+    &--table {
+      padding-top: 45px;
     }
   }
   &__diet {
     height: 754px;
+    position: relative;
     > img {
       width: 100%;
       object-fit: none;
       object-position: 0 0;
+      position: relative;
     }
+    &--content {
+      position: absolute;
+      top: 7%;
+      right: 15%;
+    }
+    &--title {
+      font-size: 36px;
+      font-family: serif;
+      color: #a28b76;
+      font-weight: bold;
+      text-align: center;
+    }
+    &--line {
+      background-color: #a28b76;
+      width: 100px;
+      height: 10px;
+      margin: 0 auto;
+    }
+    &--text {
+      font-size: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    &--icon {
+      padding-right: 15px;
+    }
+    &--table {
+      padding-top: 45px;
+    }
+  }
+  &__svg {
+    // width: 360px;
+    color: #a28b76;
   }
 }

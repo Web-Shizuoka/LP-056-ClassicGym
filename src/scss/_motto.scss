@@ -1,47 +1,73 @@
-.p-motto{
+.p-motto {
+  height: 504px;
+  background-color: black;
+  position: relative;
+  text-align: center;
+  &__img {
+    //position: relative;
+    display: block;
     height: 504px;
-    background-color: black;
-    position: relative;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    //object-position: top 30px ;
+  }
+  &__img-text {
+    position: absolute;
+    width: 908px;
+    height: 85px;
+    top: 0;
+    left: 50%;
     text-align: center;
-    &__img{
-        //position: relative;
-        display: block;
-        height: 504px;
-        width: 100%;
-        object-fit: cover;
-        opacity: .6;
-        //object-position: top 30px ;
+    background: linear-gradient(
+      to right,
+      rgba($color: #ffffff, $alpha: 0) 0%,
+      rgba($color: #ffffff, $alpha: 0.5) 10%,
+      rgba($color: #ffffff, $alpha: 0.5) 90%,
+      rgba($color: #ffffff, $alpha: 0) 100%
+    ); //rgba($color: #ffffff, $alpha: 0.7);
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 39.18px;
+    color: #e94d84;
+    font-family: serif;
+    font-weight: bold;
+  }
+  &__arrow {
+    height: 17px;
+    width: 40px;
+    background-color: #e94d84;
+    position: relative;
+    //margin-top: 20px;
+    display: inline-block;
+    top: -5px;
+    margin-right: 60px;
+    margin-left: 30px;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 18.5px 0 18.5px 32px;
+      border-color: transparent transparent transparent #e94d84;
+      position: absolute;
+      top: -60%;
+      left: 100%;
     }
-    &__img-text{
-        position: absolute;
-        top:0;
-        left:50%;
-        text-align: center;
-        background-color: rgba($color: #ffffff, $alpha: .7);
-        transform: translate(-50%, 50%);
+  }
+  &__content {
+    position: absolute;
+    left: 25%;
+    bottom: 69px;
+    &--text {
+      font-size: 40px;
+      text-align: center;
+      color: #ffffff;
     }
-    &__title{
-        font-size: 39.18px;
-    }
-    &__arrow{
-        height: 17px;
-        width: 40px;
-        background-color: #e94d84;
-        position:  relative;
-        //margin-top: 20px;
-        display: inline-block;
-        top:-5px;
-        margin-right: 32.0px;
-        &::after{
-            content:  '';
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 18.5px 0 18.5px 32.0px;
-            border-color: transparent transparent transparent #e94d84;
-            position:  absolute;
-            top: -60%;
-            left: 100%;
-        }
-    }
+  }
 }

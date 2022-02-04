@@ -1,117 +1,120 @@
-$bg : #f6f3f1;
+$bg: #f6f3f1;
 $course-width: 1024px;
-.p-course{
-    &__one-month{
-        width: $course-width;
-        height: 528px;
-        background-color: $bg;
-        margin: 0 auto;
-        &--area{
-            width: 725px;
-            margin: 0 auto;
-        }
+.p-course {
+  &__one-month {
+    width: $course-width;
+    height: 528px;
+    background-color: $bg;
+    margin: 0 auto;
+    &--area {
+      width: 725px;
+      margin: 0 auto;
     }
-    &__two-month{
-        width: $course-width;
-        height: 612px;
-        background-color: $bg;
-        margin: 0 auto;
-        margin-top: 70px;
-        &--area{
-            width: 725px;
-            margin: 0 auto;
-        }
+  }
+  &__two-month {
+    width: $course-width;
+    height: 612px;
+    background-color: $bg;
+    margin: 0 auto;
+    margin-top: 70px;
+    &--area {
+      width: 725px;
+      margin: 0 auto;
     }
-    &__after{
-        width: $course-width;
-        height: 448px;
-        background-color: $bg;
-        margin: 0 auto;
-        margin-top: 70px;
-        &--area{
-            width: 725px;
-            margin: 0 auto;
-        }
+  }
+  &__after {
+    width: $course-width;
+    height: max-content;
+    background-color: $bg;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 45px;
+    &--area {
+      width: 725px;
+      margin: 0 auto;
     }
-    &__limit{
-        font-size: 20px;
-        color: #000000;
+  }
+  &__limit {
+    font-size: 20px;
+    color: #000000;
+  }
+  &__ballon {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0;
+    width: 725px;
+    font-size: 40px;
+    color: #ffffff;
+    background: #a28b76;
+    height: 80px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+      border: 15px solid transparent;
+      border-top: 15px solid #a28b76;
     }
-    &__ballon{
-        position: relative;
-        display: inline-block;
-        margin: 1.5em 0;
-        width: 725px;
-        font-size: 40px;
-        color: #ffffff;
-        background: #a28b76;
-        height: 80px;
-        &::before{
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -15px;
-            border: 15px solid transparent;
-            border-top: 15px solid #a28b76;
-        }
-        &--outer{
-            display: table;
-            text-align: center;
-            height: inherit;
-        }
-        &--inner{
-            display: table-cell;
-            vertical-align: middle;
-        }
-        > p{
-            text-align:center;
-            padding: 10px 0;
-        }
+    &--outer {
+      display: table;
+      text-align: center;
+      height: inherit;
     }
-    &__price{
-        font-size: 81.85px;
-        color: #e94d84;
-        &--tax{
-            font-size: 41px;
-        }
-        &--sheet{
-            font-size: 41px;
-        }
-        &--menu{
-            margin: 0 auto;
-            color: black;
-            width: 973px;
-            height: 63px;
-            font-size: 30px;
-            background-color: #ffffff;
-            
-            margin-top: 16px ;
-            &:nth-child(1){
-            }
-        }
+    &--inner {
+      display: table-cell;
+      vertical-align: middle;
     }
-    &__after-follow{
-        width: $course-width;
-        height: 506px;
-        background-color: $bg;
-        margin: 0 auto;
-        &--title{
-            
-        }
+    > p {
+      text-align: center;
+      padding: 10px 0;
     }
-    &__table{
-        margin: 0 auto;
-        padding-top: 17px;
-        &--header{
-            height: 34px;
-            width: 204px;
-            background-color: #a28b76;
-        }
-        &--item{
-            text-align: left;
-            padding-left: 24px;
-            font-size: 20px;
-        }
+  }
+  &__price {
+    font-size: 81.85px;
+    color: #e94d84;
+    &--tax {
+      font-size: 41px;
     }
+    &--sheet {
+      font-size: 41px;
+    }
+    &--menu {
+      margin: 0 auto;
+      color: black;
+      width: 973px;
+      height: 63px;
+      font-size: 30px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+      &:nth-child(1) {
+      }
+    }
+  }
+  &__after-follow {
+    width: $course-width;
+    height: 506px;
+    background-color: $bg;
+    margin: 0 auto;
+    &--title {
+    }
+  }
+  &__table {
+    margin: 0 auto;
+    padding-top: 17px;
+    &--header {
+      height: 34px;
+      width: 204px;
+      background-color: #a28b76;
+    }
+    &--item {
+      text-align: left;
+      padding-left: 24px;
+      font-size: 20px;
+    }
+  }
 }
