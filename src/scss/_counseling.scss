@@ -1,36 +1,67 @@
-.p-counseling{
-    height: 211px;
-    text-align: center;
-    border-top: 6px solid #a28b76;
-    border-bottom: 6px solid #a28b76;
-    background-color: #f4f4f4;
-    font-size: 30px;
-    font-family: 'Hiragino Sans';
-    &--main-text{
-        padding-top: 33px;
-        color: #a28b76;
+.p-counseling {
+  text-align: center;
+  border-top: 6px solid #a28b76;
+  border-bottom: 6px solid #a28b76;
+  background-color: #f4f4f4;
+  font-size: 30px;
+  font-family: "Hiragino Sans";
+  &--main {
+    padding-top: 33px;
+    &-text {
+      color: #a28b76;
     }
-    &__btn-area{
-        padding-top: 17px;
-        &--btn-ftf{
-            margin-right: 30px;
-            color: #f2fcff;
-            background-color: #e94d84;
-        }
-        &--btn-line{
-            margin-left: 30px;
-            color: #f2fcff;
-            background-color: #00ba1b;
-        }
+  }
+  &__btn-area {
+    padding-top: 34px;
+    padding-bottom: 54px;
+    &--btn-ftf {
+      margin-right: 30px;
+      color: #f2fcff;
+      background-color: #e94d84;
+      padding: 27px 93px 28px 65px;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 10.4px;
+        border-color: transparent transparent transparent #ffffff;
+        top: 42%;
+        right: 11%;
+      }
     }
+    &--btn-line {
+      margin-left: 30px;
+      color: #f2fcff;
+      background-color: #00ba1b;
+      padding: 27px 88px 28px 61px;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 10.4px;
+        border-color: transparent transparent transparent #ffffff;
+        top: 42%;
+        right: 11%;
+      }
+    }
+  }
 }
-.p-after-counseling{
-    
-    background-color: #f6f3f1;
-    text-align: center;
-    &__title{
-        padding-top: 130px;
-        padding-bottom: 34px;
-        font-size: 60px;
-    }
+.p-after-counseling {
+  background-color: #f6f3f1;
+  text-align: center;
+  &__title {
+    padding-top: 130px;
+    padding-bottom: 34px;
+    font-size: 60px;
+  }
 }

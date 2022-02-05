@@ -1,13 +1,27 @@
-.p-message{
-    font-size: 40px;
-    text-align:center;
-    &__first{
-        height: 220px;
-        background-color: #fff1f6; 
+.p-message {
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-family: serif;
+  &__first {
+    height: 220px;
+    background-color: #fff1f6;
+  }
+  &__second {
+    margin-top: 88px;
+    height: 238px;
+    background-color: #fff1f6;
+    position: relative;
+  }
+  &__text {
+    &--caution {
+      position: absolute;
+      bottom: 5%;
+      right: 19%;
+      font-size: 16px;
     }
-    &__second{
-        margin-top: 88px;
-        height: 238px;
-        background-color: #fff1f6;
-    }
+  }
 }
