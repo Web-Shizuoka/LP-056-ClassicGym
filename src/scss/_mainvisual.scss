@@ -44,9 +44,11 @@
   }
   &__catch-copy {
     position: absolute;
-    top: 10%;
-    left: 12%;
+    height: 100%;
+    top: 0;
+    left: 16%;
     &--text {
+      margin-top: 100px;
       font-size: 55.38px;
       font-family: serif;
       font-style: italic;
@@ -58,7 +60,6 @@
       z-index: 1;
       text-align: center;
       margin: 0 auto;
-      width: 110%;
       &::before {
         transform: skewX(-15deg);
         content: "";
@@ -76,7 +77,6 @@
       z-index: 1;
       text-align: center;
       margin: 0 auto;
-      width: 110%;
       margin-top: 30px;
       &::before {
         transform: skewX(-15deg);
@@ -94,9 +94,10 @@
       font-size: 50px;
       color: #a28b76;
       text-align: center;
-      padding-top: 24px;
+      margin-top: 70px;
     }
     &--contents {
+      margin-top: 50px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 12px;
