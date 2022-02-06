@@ -6,6 +6,8 @@
   align-content: center;
   justify-content: center;
   font-family: serif;
+  color: #383838;
+  font-weight: bold;
   &__first {
     height: 220px;
     background-color: #fff1f6;
@@ -22,6 +24,7 @@
       bottom: 5%;
       right: 19%;
       font-size: 16px;
+      color: #000000;
     }
   }
 }

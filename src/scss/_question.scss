@@ -1,13 +1,15 @@
 .p-question {
-  height: 1377px;
   background-color: #ffffff;
   text-align: center;
   &__title {
     font-size: 60px;
-    padding-top: 130px;
+    margin-top: 130px;
+    margin-bottom: 46px;
+    font-family: serif;
   }
   &__area {
     margin: 0 360px;
+    margin-bottom: 132px;
   }
   &__items {
     display: grid;

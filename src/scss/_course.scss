@@ -6,6 +6,7 @@ $course-width: 1024px;
     height: 528px;
     background-color: $bg;
     margin: 0 auto;
+    margin-top: 87px;
     &--area {
       width: 725px;
       margin: 0 auto;
@@ -37,6 +38,7 @@ $course-width: 1024px;
   &__limit {
     font-size: 20px;
     color: #000000;
+    font-family: sans-serif;
   }
   &__ballon {
     position: relative;
@@ -47,6 +49,7 @@ $course-width: 1024px;
     color: #ffffff;
     background: #a28b76;
     height: 80px;
+    font-family: serif;
     &::before {
       content: "";
       position: absolute;
@@ -91,8 +94,6 @@ $course-width: 1024px;
       justify-content: center;
       align-items: center;
       margin-top: 16px;
-      &:nth-child(1) {
-      }
     }
   }
   &__after-follow {
@@ -100,8 +101,6 @@ $course-width: 1024px;
     height: 506px;
     background-color: $bg;
     margin: 0 auto;
-    &--title {
-    }
   }
   &__table {
     margin: 0 auto;
@@ -110,6 +109,7 @@ $course-width: 1024px;
       height: 34px;
       width: 204px;
       background-color: #a28b76;
+      color: #ffffff;
     }
     &--item {
       text-align: left;
