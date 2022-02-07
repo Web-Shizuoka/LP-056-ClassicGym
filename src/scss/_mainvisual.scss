@@ -44,6 +44,7 @@
   }
   &__catch-copy {
     position: absolute;
+    width: 810px;
     height: 100%;
     top: 0;
     left: 16%;
@@ -143,6 +144,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 12px;
+      &-sp {
+        display: none;
+      }
       > div {
         text-align: center;
         font-size: 20px;
@@ -152,6 +156,129 @@
         outline: solid 2px #a28b76; /* 外側の線になる一本線の枠線をひく*/
         outline-offset: -5px; /* 外側の線と内側の線の空き具合を調整*/
         //margin: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .p-mainvisual {
+    background-color: $color-key;
+
+    //height: 705px;
+    &__inner {
+      //max-width: $inner-width-pc;
+      width: 100%;
+      //margin: 0 auto;
+      position: relative;
+      height: 100%;
+
+      @include pcmini {
+        height: 550px;
+        padding-top: 0;
+      }
+
+      &--img-main {
+        height: 100%;
+        //position: absolute;
+        //left: 50%;
+
+        width: 100%;
+        top: 20px;
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: none;
+          object-position: 100% 100%;
+          position: relative;
+        }
+        @include pcmini {
+          bottom: auto;
+          top: 20px;
+          //right: 15;
+          //left: 85%;
+
+          & img {
+            width: 100%;
+            object-fit: cover;
+            object-position: 100% 0;
+          }
+        }
+      }
+    }
+    &__catch-copy {
+      position: absolute;
+      height: 100%;
+      top: 60%;
+      left: 0;
+      width: 100%;
+      &--text {
+        margin-top: 100px;
+        font-size: 55px;
+        font-family: serif;
+        font-style: italic;
+        transform: skewY(-4deg);
+        color: #ffffff;
+      }
+      &--first {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0 auto;
+        &::before {
+          transform: skewX(0);
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          background-color: rgba($color: #a28b76, $alpha: 0.9);
+        }
+      }
+      &--second {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        &::before {
+          transform: skewX(0);
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: -1;
+          background-color: rgba($color: #a28b76, $alpha: 0.9);
+        }
+      }
+      &--main-catch {
+        display: none;
+      }
+      &--contents {
+        display: none;
+        &-sp {
+          display: block;
+          margin: -40px 30px 0 30px;
+          &-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 10px;
+            > div {
+              text-align: center;
+              font-size: 30px;
+              font-family: sans-serif;
+              background-color: #f4ede7;
+              padding: 20px 20px;
+              border: solid 1px #a28b76; /* 内側の線になる一本線の枠線をひく*/
+              outline: solid 2px #a28b76; /* 外側の線になる一本線の枠線をひく*/
+              outline-offset: -5px; /* 外側の線と内側の線の空き具合を調整*/
+              //ma
+            }
+          }
+        }
       }
     }
   }

@@ -106,3 +106,111 @@ ul {
     }
   }
 }
+@media screen and (max-width: 750px) {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &.p-pricecards {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+      align-items: flex-end;
+    }
+    > .p-pricecard {
+      flex: 0 0 33%;
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 10px 10px 0 0;
+      //padding-bottom: 1rem;
+      box-sizing: border-box;
+      margin-left: 5px;
+      margin-right: 5px;
+      > p {
+        //background: #cecece;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+        &.gym {
+          text-align: center;
+          background: #e94d84;
+          border-radius: 10px 10px 0 0;
+          color: #ffffff;
+          font-size: 54.31px;
+          padding: 10px;
+          margin: 0;
+        }
+        &.other {
+          text-align: center;
+          background: #cecece;
+          border-radius: 10px 10px 0 0;
+          color: #000000;
+          font-size: 48.13px;
+          padding: 10px;
+          margin: 0;
+        }
+      }
+      > .pricecard-body {
+        background-color: #ffffff;
+        border-radius: 10px 10px 0 0;
+        &__other {
+          background-color: #ffffff;
+          border-radius: 10px 10px 0 0;
+          font-size: 64.17px;
+
+          padding-left: 26px;
+          padding-right: 26px;
+          padding-top: 22px;
+          padding-bottom: 17px;
+          > .total {
+            font-size: 48.13px;
+          }
+          > .yen {
+            font-size: 48.13px;
+          }
+          > .tax {
+            font-size: 41.71px;
+          }
+        }
+        &.price-gym {
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 29px;
+          padding-bottom: 21px;
+          font-size: 72.41px;
+          color: #e94d84;
+          text-align: center;
+          > .total {
+            font-size: 54.31px;
+          }
+          > .yen {
+            font-size: 54.31px;
+          }
+          > .tax {
+            font-size: 47.07px;
+          }
+        }
+      }
+      &.gym {
+        //border: 3px solid #06c7ea;
+        //padding-bottom: 3rem;
+        background-color: #ffffff;
+        flex-basis: auto;
+        width: 90%;
+        > h4 {
+          padding: 20px;
+        }
+      }
+      &.other-gym {
+        flex-basis: auto;
+        padding-top: 39px;
+      }
+    }
+  }
+}

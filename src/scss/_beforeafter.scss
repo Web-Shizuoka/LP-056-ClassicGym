@@ -5,3 +5,15 @@
   column-gap: 20px;
   row-gap: 38px;
 }
+@media screen and (max-width: 750px) {
+  .img-hidden {
+    display: none;
+  }
+  .before_after {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+  }
+}

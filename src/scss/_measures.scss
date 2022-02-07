@@ -1,9 +1,11 @@
 .p-measures {
-  height: 379px;
+  height: 100%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 69px;
   &__covid {
     margin: 0 auto;
     height: 218px;
@@ -20,6 +22,13 @@
     color: #000000;
     &--area {
       padding-left: 26px;
+      display: block;
+      &-sp {
+        display: none;
+      }
+    }
+    &-sp {
+      display: none;
     }
     &--covid {
       font-size: 24px;
@@ -49,5 +58,78 @@
   &__area {
     padding-top: 15px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .p-measures {
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 108px;
+    padding-bottom: 113px;
+    padding-left: 30px;
+    padding-right: 30px;
+    &__covid {
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      background-color: #f6f3f1;
+      border: 2px solid #a28b76;
+      font-size: 30px;
+    }
+    &__title {
+      padding-top: 19px;
+      margin: 0 auto;
+    }
+    &__info {
+      font-size: 16px;
+      color: #000000;
+      &--area {
+        display: none;
+        &-sp {
+          display: block;
+        }
+      }
+      &-sp {
+        display: block;
+        font-size: 26px;
+        color: #000000;
+        padding: 0px 20px 0px 20px;
+      }
+      &--covid {
+        font-size: 24px;
+        color: #a28b76;
+        font-family: serif;
+        font-weight: bold;
+      }
+    }
+    &__items {
+      //width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      column-gap: 21px;
+      row-gap: 20px;
+      flex-wrap: wrap;
+      padding-bottom: 69px;
+      padding-top: 69px;
+    }
+    &__item {
+      width: 300px;
+      height: 163.73px;
+      border: 1px solid #a28b76;
+      background-color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 28px;
+      display: grid;
+      place-items: center;
+    }
+    &__area {
+      padding-top: 15px;
+      margin: 0 auto;
+    }
   }
 }
