@@ -4,6 +4,12 @@
 
   clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
   margin-bottom: 28px;
+  &__check {
+    width: 28px;
+    > g {
+      fill: #a28b76;
+    }
+  }
   &__question {
     height: 665px;
     position: relative;
@@ -110,6 +116,12 @@
 
     clip-path: polygon(50% 100%, 100% 97%, 100% 0, 0 0, 0 97%);
     margin-bottom: 28px;
+    &__check {
+      width: 45px;
+      > g {
+        fill: #a28b76;
+      }
+    }
     &__question {
       height: 1500px;
       position: relative;

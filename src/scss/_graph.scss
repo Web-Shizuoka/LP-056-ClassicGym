@@ -1,11 +1,12 @@
 .p-graph {
-  height: 1016px;
+  height: 100%;
   background-color: #fefefe;
   &__backgrpund {
-    width: 100%;
+    width: auto;
     object-fit: none;
     object-position: 0% 0%;
     position: relative;
+    display: block;
   }
   &__area {
     position: relative;
@@ -17,6 +18,10 @@
       left: 399px;
       font-size: 24.01px;
       line-height: 2;
+      display: block;
+      &-sp {
+        display: none;
+      }
     }
 
     &--img {
@@ -24,6 +29,46 @@
       background-color: #ffffff;
       > img {
         margin: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p-graph {
+    height: 100%;
+    background-color: #fefefe;
+    &__backgrpund {
+      width: 100%;
+      object-fit: none;
+      object-position: 0% 0%;
+      position: relative;
+      display: none;
+    }
+    &__area {
+      position: relative;
+      top: 0;
+      &--text {
+        display: none;
+        &-sp {
+          position: relative;
+          text-align: center;
+          top: 0;
+          left: 0;
+          padding: 50px 0;
+          font-size: 25px;
+          line-height: 1.5;
+          display: block;
+        }
+      }
+
+      &--img {
+        margin: 100px 60px 80px 40px;
+        background-color: #ffffff;
+        > img {
+          width: 100%;
+          margin: 0;
+        }
       }
     }
   }
