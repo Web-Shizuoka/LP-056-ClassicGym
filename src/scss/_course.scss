@@ -3,10 +3,11 @@ $course-width: 1024px;
 .p-course {
   &__one-month {
     width: $course-width;
-    height: 528px;
+    height: 100%;
     background-color: $bg;
     margin: 0 auto;
     margin-top: 87px;
+    padding-bottom: 45px;
     &--area {
       width: 725px;
       margin: 0 auto;
@@ -14,10 +15,11 @@ $course-width: 1024px;
   }
   &__two-month {
     width: $course-width;
-    height: 612px;
+    height: 100%;
     background-color: $bg;
     margin: 0 auto;
     margin-top: 70px;
+    padding-bottom: 45px;
     &--area {
       width: 725px;
       margin: 0 auto;
@@ -94,6 +96,9 @@ $course-width: 1024px;
       justify-content: center;
       align-items: center;
       margin-top: 16px;
+      &-sp {
+        display: none;
+      }
     }
   }
   &__after-follow {
@@ -110,11 +115,164 @@ $course-width: 1024px;
       width: 204px;
       background-color: #a28b76;
       color: #ffffff;
+      display: table-cell;
+      &-sp {
+        display: none;
+      }
     }
     &--item {
       text-align: left;
       padding-left: 24px;
       font-size: 20px;
+      display: table-cell;
+      &-sp {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  $width: 100%;
+  $height: 100%;
+  .p-course {
+    &__one-month {
+      width: $width;
+      height: $height;
+      background-color: $bg;
+      margin: 0 auto;
+      margin-top: 87px;
+      padding-bottom: 46px;
+      &--area {
+        width: 725px;
+        margin: 0 auto;
+      }
+    }
+    &__two-month {
+      width: $width;
+      height: $height;
+      background-color: $bg;
+      margin: 0 auto;
+      margin-top: 70px;
+      padding-bottom: 46px;
+      &--area {
+        width: 725px;
+        margin: 0 auto;
+      }
+    }
+    &__after {
+      width: $width;
+      height: max-content;
+      background-color: $bg;
+      margin: 0 auto;
+      margin-top: 70px;
+      padding-bottom: 45px;
+      &--area {
+        width: 725px;
+        margin: 0 auto;
+      }
+    }
+    &__limit {
+      font-size: 30px;
+      color: #000000;
+      font-family: sans-serif;
+    }
+    &__ballon {
+      position: relative;
+      display: inline-block;
+      margin: 1.5em 0;
+      width: 725px;
+      font-size: 40px;
+      color: #ffffff;
+      background: #a28b76;
+      height: 80px;
+      font-family: serif;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid #a28b76;
+      }
+      &--outer {
+        display: table;
+        text-align: center;
+        height: inherit;
+      }
+      &--inner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      > p {
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+    &__price {
+      font-size: 81.85px;
+      color: #e94d84;
+      &--tax {
+        font-size: 41px;
+      }
+      &--sheet {
+        font-size: 41px;
+      }
+      &--menu {
+        display: none;
+        &-sp {
+          display: block;
+          margin: 0 auto;
+          color: black;
+          //width: 100%;
+          height: 120px;
+          font-size: 30px;
+          font-family: sans-serif;
+          background-color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 25px 20px 0px 20px;
+        }
+      }
+    }
+    &__after-follow {
+      width: $course-width;
+      height: 506px;
+      background-color: $bg;
+      margin: 0 auto;
+    }
+    &__table {
+      margin: 0 auto;
+      padding-top: 33px;
+      width: 100%;
+      &--header {
+        display: none;
+        &-sp {
+          height: 70px;
+          width: 204px;
+          font-size: 26px;
+          font-family: sans-serif;
+          font-weight: lighter;
+          background-color: #a28b76;
+          color: #ffffff;
+          display: table-cell;
+        }
+      }
+      &--item {
+        display: none;
+        &-sp {
+          height: 70px;
+          text-align: left;
+          padding-left: 24px;
+          font-size: 30px;
+          font-family: sans-serif;
+          font-weight: lighter;
+          display: table-cell;
+        }
+      }
     }
   }
 }

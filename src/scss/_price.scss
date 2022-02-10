@@ -37,3 +37,45 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .p-price {
+    background-color: #fff1f6;
+    text-align: center;
+    padding-bottom: 99px;
+    &__title {
+      font-size: 60px;
+      padding-top: 120px;
+      padding-bottom: 67px;
+      font-family: serif;
+      font-weight: bold;
+    }
+    &__area {
+      width: 100%;
+      margin-top: 67px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      padding-bottom: 98px;
+    }
+    &__join {
+      &--text {
+        font-size: 60px;
+        padding-top: 92px;
+        font-family: serif;
+        font-weight: bold;
+      }
+      &--under {
+        background: linear-gradient(transparent 70%, #fff1f6 50%);
+        padding: 0 10px;
+      }
+      &--number {
+        font-size: 120px;
+        color: #e94d84;
+      }
+      &--yen {
+        font-size: 40px;
+        color: #e94d84;
+      }
+    }
+  }
+}
