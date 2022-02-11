@@ -88,7 +88,7 @@
     margin-top: 100px;
     background-color: #ffffff;
     &__title {
-      font-size: 38px;
+      font-size: 5.5vw;
       padding-top: 47px;
       padding-bottom: 45px;
       display: flex;
@@ -123,8 +123,8 @@
       flex-direction: column;
       > .p-afterfollow__item:not(:last-child) {
         > .p-afterfollow__item--head {
-          padding-top: 24px;
-          padding-bottom: 24px;
+          padding-top: 2vw;
+          padding-bottom: 2vw;
         }
       }
 
@@ -146,14 +146,14 @@
         line-height: 1.5;
         &--title {
           text-align: center;
-          font-size: 34px;
+          font-size: 5vw;
           color: #ffffff;
         }
       }
       &--text {
-        margin-top: 20px;
+        margin-top: 3vw;
         text-align: left;
-        font-size: 18px;
+        font-size: 2.73vw;
       }
     }
     &__number {
@@ -164,10 +164,10 @@
         transform: translate(-50%, -50%);
         background: #ffffff;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 6vw;
+        height: 6vw;
         color: #a28b76;
-        font-size: 40.23px;
+        font-size: 5.6vw;
         text-align: center;
         line-height: 1.1;
         margin-right: 11px;

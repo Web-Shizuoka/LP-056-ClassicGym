@@ -109,10 +109,13 @@
         border-bottom: solid 5px #a28b76;
 
         .logo {
-          width: 260px;
+          width: 45vw;
           display: flex;
           justify-content: center;
           flex-direction: column;
+          &__img {
+            width: 45vw;
+          }
         }
 
         .info {
@@ -134,15 +137,19 @@
           .tel {
             display: flex;
             align-items: center;
+            width: 45vw;
+            &__img {
+              width: 5vw;
+            }
             .tel_txt_num {
-              font-size: 40px;
+              font-size: 5vw;
               color: #000000;
               line-height: 1;
             }
 
             .tel_txt_time {
               text-align: center;
-              font-size: 20.12px;
+              font-size: 2.5vw;
             }
           }
 

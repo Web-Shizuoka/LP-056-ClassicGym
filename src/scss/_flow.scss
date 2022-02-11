@@ -245,8 +245,8 @@
     }
     &__icon {
       background: #a28b76;
-      width: 54.13px;
-      height: 46.63px;
+      width: 8vw;
+      height: 7vw;
       color: #fff;
       //font-size: 52px;
       text-align: center;
@@ -255,10 +255,10 @@
       justify-content: center;
       align-items: center;
       color: white;
-      font-size: 26px;
+      font-size: 4vw;
       &--dt {
         position: absolute;
-        top: 30px;
+        top: 4.5vw;
         left: 0;
       }
     }
@@ -270,11 +270,11 @@
       align-items: center;
       width: auto;
       > img {
-        width: 122px;
+        width: 17vw;
       }
     }
     &__title {
-      font-size: 29.92px;
+      font-size: 4vw;
       color: #a28b76;
     }
     &__description {
@@ -284,14 +284,14 @@
         padding-right: 30px;
         padding-bottom: 27px;
         padding-top: 40px;
-        font-size: 23.93px;
+        font-size: 4vw;
         color: #000000;
       }
     }
     &__item {
       &--text {
         padding-top: 24px;
-        font-size: 31.91px;
+        font-size: 4.5vw;
         font-weight: bold;
       }
     }

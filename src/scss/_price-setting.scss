@@ -142,7 +142,7 @@ ul {
           background: #e94d84;
           border-radius: 10px 10px 0 0;
           color: #ffffff;
-          font-size: 54.31px;
+          font-size: 7.5vw;
           padding: 10px;
           margin: 0;
         }
@@ -151,7 +151,7 @@ ul {
           background: #cecece;
           border-radius: 10px 10px 0 0;
           color: #000000;
-          font-size: 48.13px;
+          font-size: 6vw;
           padding: 10px;
           margin: 0;
         }
@@ -162,20 +162,20 @@ ul {
         &__other {
           background-color: #ffffff;
           border-radius: 10px 10px 0 0;
-          font-size: 64.17px;
+          font-size: 9vw;
 
           padding-left: 26px;
           padding-right: 26px;
           padding-top: 22px;
           padding-bottom: 17px;
           > .total {
-            font-size: 48.13px;
+            font-size: 6vw;
           }
           > .yen {
-            font-size: 48.13px;
+            font-size: 6vw;
           }
           > .tax {
-            font-size: 41.71px;
+            font-size: 5vw;
           }
         }
         &.price-gym {
@@ -183,17 +183,17 @@ ul {
           padding-right: 0;
           padding-top: 29px;
           padding-bottom: 21px;
-          font-size: 72.41px;
+          font-size: 10vw;
           color: #e94d84;
           text-align: center;
           > .total {
-            font-size: 54.31px;
+            font-size: 7vw;
           }
           > .yen {
-            font-size: 54.31px;
+            font-size: 7vw;
           }
           > .tax {
-            font-size: 47.07px;
+            font-size: 6vw;
           }
         }
       }

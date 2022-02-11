@@ -44,9 +44,9 @@
     text-align: center;
     padding-bottom: 99px;
     &__title {
-      font-size: 60px;
-      padding-top: 120px;
-      padding-bottom: 67px;
+      font-size: 8vw;
+      padding-top: 12vw;
+      padding-bottom: 7vw;
       font-family: serif;
       font-weight: bold;
     }
@@ -59,8 +59,8 @@
     }
     &__join {
       &--text {
-        font-size: 60px;
-        padding-top: 92px;
+        font-size: 8vw;
+        padding-top: 10vw;
         font-family: serif;
         font-weight: bold;
       }
@@ -69,11 +69,11 @@
         padding: 0 10px;
       }
       &--number {
-        font-size: 120px;
+        font-size: 16vw;
         color: #e94d84;
       }
       &--yen {
-        font-size: 40px;
+        font-size: 5vw;
         color: #e94d84;
       }
     }

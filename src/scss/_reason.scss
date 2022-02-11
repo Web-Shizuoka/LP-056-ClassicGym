@@ -104,6 +104,9 @@
     background-color: #ffffff;
     text-align: center;
     border-top: 2px solid #a28b76;
+    &__area {
+      padding-top: 15vw;
+    }
     &__flex {
       display: none;
     }
@@ -112,7 +115,7 @@
       &-sp {
         display: block;
         line-height: 1.3;
-        font-size: 60px;
+        font-size: 8.5vw;
         font-family: serif;
         font-weight: bolder;
       }
@@ -128,14 +131,14 @@
         margin-top: 50px;
       }
       &--number {
-        font-size: 150px;
+        font-size: 18vw;
         color: #e94d84;
         font-style: italic;
         line-height: 1;
         font-family: serif;
       }
       &--text {
-        font-size: 34px;
+        font-size: 4vw;
         display: grid;
         place-items: center;
         color: #888888;
@@ -151,13 +154,13 @@
     &__text {
       &-sp {
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 4vw;
         text-align: left;
       }
     }
 
     &__img {
-      margin-bottom: 50px;
+      margin-bottom: auto;
       > img {
         width: 100%;
       }

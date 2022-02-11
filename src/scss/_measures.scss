@@ -82,6 +82,9 @@
     &__title {
       padding-top: 19px;
       margin: 0 auto;
+      &--icon {
+        width: 10vw;
+      }
     }
     &__info {
       font-size: 16px;
@@ -94,12 +97,12 @@
       }
       &-sp {
         display: block;
-        font-size: 26px;
+        font-size: 3.5vw;
         color: #000000;
         padding: 0px 20px 0px 20px;
       }
       &--covid {
-        font-size: 24px;
+        font-size: 3.5vw;
         color: #a28b76;
         font-family: serif;
         font-weight: bold;
@@ -113,17 +116,17 @@
       column-gap: 21px;
       row-gap: 20px;
       flex-wrap: wrap;
-      padding-bottom: 69px;
-      padding-top: 69px;
+      padding-bottom: 7vw;
+      padding-top: 6vw;
     }
     &__item {
-      width: 300px;
-      height: 163.73px;
+      width: 40vw;
+      height: 25vw;
       border: 1px solid #a28b76;
       background-color: #ffffff;
       border-radius: 10px;
       text-align: center;
-      font-size: 28px;
+      font-size: 3.5vw;
       display: grid;
       place-items: center;
     }

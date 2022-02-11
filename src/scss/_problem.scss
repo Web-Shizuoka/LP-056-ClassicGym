@@ -117,17 +117,17 @@
     clip-path: polygon(50% 100%, 100% 97%, 100% 0, 0 0, 0 97%);
     margin-bottom: 28px;
     &__check {
-      width: 45px;
+      width: 5.5vw;
       > g {
         fill: #a28b76;
       }
     }
     &__question {
-      height: 1500px;
+      height: auto;
       position: relative;
       > img {
         width: 100%;
-        height: 100%;
+        height: 200vw;
         object-fit: cover;
         object-position: 100% 0;
         position: relative;
@@ -146,7 +146,7 @@
         font-weight: bold;
         display: none;
         &-sp {
-          font-size: 50px;
+          font-size: 7vw;
           font-family: serif;
           color: #a28b76;
           font-weight: bold;
@@ -157,8 +157,9 @@
       }
       &--line {
         background-color: #a28b76;
-        width: 100px;
-        height: 10px;
+        width: 15vw;
+        height: 1.5vw;
+        margin-top: 5vw;
         margin: 0 auto;
         margin-bottom: 50px;
       }
@@ -169,7 +170,7 @@
         display: none;
         &-sp {
           display: block;
-          font-size: 36px;
+          font-size: 4.5vw;
           padding-top: 20px;
           padding-bottom: 20px;
         }
@@ -183,12 +184,12 @@
       }
     }
     &__diet {
-      height: 1300px;
+      height: auto;
       position: relative;
       margin-top: 100px;
       > img {
         width: 100%;
-        height: 100%;
+        height: 180vw;
         object-fit: cover;
         object-position: 70% 0;
         position: relative;
@@ -208,7 +209,7 @@
         text-align: center;
         display: none;
         &-sp {
-          font-size: 50px;
+          font-size: 7vw;
           font-family: serif;
           color: #a28b76;
           font-weight: bold;
@@ -219,9 +220,10 @@
       }
       &--line {
         background-color: #a28b76;
-        width: 100px;
-        height: 10px;
+        width: 15vw;
+        height: 1.5vw;
         margin: 0 auto;
+        margin-top: 5vw;
         margin-bottom: 50px;
       }
       &--text {
@@ -231,7 +233,7 @@
         display: none;
         &-sp {
           display: block;
-          font-size: 36px;
+          font-size: 4.5vw;
           padding-top: 20px;
           padding-bottom: 20px;
         }
