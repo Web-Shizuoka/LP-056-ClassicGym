@@ -10,13 +10,13 @@ $inner-width-pc: 1000px;
 
 // メディアクエリー
 @mixin sp {
-	@media screen and (max-width: 767px) {
-		@content;
-	}
+  @media screen and (max-width: 750px) {
+    @content;
+  }
 }
 
 @mixin pcmini {
-	@media screen and (max-width: 1024px) {
-		@content;
-	}
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
 }

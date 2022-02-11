@@ -10,16 +10,48 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+
+    @include sp {
+      margin: 0 auto;
+      margin-top: 30px;
+      display: block;
+    }
+
+    &--br {
+      display: none;
+      @include sp {
+        display: inline;
+      }
+      &-text {
+        display: block;
+        @include sp {
+          display: none;
+        }
+      }
+    }
     &--table {
+      @include sp {
+        margin-bottom: 50px;
+      }
       > table {
         border-collapse: collapse;
         border: 2px #acacac solid;
+
+        @include sp {
+          margin: 0 auto;
+        }
       }
       &--header {
         height: 87px;
         width: 120px;
         border: 2px #acacac solid;
         background-color: #f6f3f1;
+        @include sp {
+          height: 100%;
+          width: 170px;
+          font-size: 25.93px;
+          font-weight: lighter;
+        }
       }
       &--data {
         width: 512px;
@@ -27,12 +59,23 @@
         padding-left: 21px;
         margin-right: 31px;
         text-align: left;
+
+        @include sp {
+          font-size: 25.93px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          line-height: 2;
+        }
       }
     }
   }
   &__map {
     width: 100%;
     height: 100%;
+    @include sp {
+      padding: 0 30px;
+      height: 520px;
+    }
     &--frame {
       width: 100%;
       height: 100%;
