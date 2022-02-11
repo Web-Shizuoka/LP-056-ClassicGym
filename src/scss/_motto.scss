@@ -11,6 +11,9 @@
     object-fit: cover;
     opacity: 0.6;
     //object-position: top 30px ;
+    &-sp {
+      display: none;
+    }
   }
   &__img-text {
     position: absolute;
@@ -85,11 +88,18 @@
     text-align: center;
     &__img {
       //position: relative;
-      display: block;
       height: 100%;
       width: 100%;
       object-fit: none;
       opacity: 0.6;
+      display: none;
+      &-sp {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+      }
       //object-position: top 30px ;
     }
     &__img-text {
