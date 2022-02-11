@@ -2,6 +2,9 @@
   height: 100%;
   background-color: #f6f3f1;
   padding-bottom: 147px;
+  &__br {
+    display: block;
+  }
   &__area {
     width: 1024px;
     margin: 0 auto;
@@ -144,6 +147,9 @@
     background-color: #f6f3f1;
     padding-bottom: 147px;
     margin: 0 30px 0 30px;
+    &__br {
+      display: none;
+    }
     &__area {
       width: 100%;
       margin: 0 auto;
