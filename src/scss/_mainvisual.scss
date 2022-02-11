@@ -1,6 +1,11 @@
 .p-mainvisual {
   background-color: $color-key;
-
+  &__bg {
+    display: block;
+    &-sp {
+      display: none;
+    }
+  }
   height: 705px;
   &__inner {
     //max-width: $inner-width-pc;
@@ -165,6 +170,12 @@
     background-color: $color-key;
     height: 100%;
     padding-bottom: 20vw;
+    &__bg {
+      display: none;
+      &-sp {
+        display: block;
+      }
+    }
     //height: 705px;
     &__inner {
       //max-width: $inner-width-pc;
