@@ -11,6 +11,8 @@
         position: fixed;
         bottom: 0;
         z-index: 1;
+        border-bottom: none;
+        width: 100vw;
       }
       > .p-counseling--main {
         padding-top: 0;
@@ -26,12 +28,13 @@
         flex-direction: row;
         align-items: center;
         align-content: center;
+        justify-content: center;
         column-gap: 10px;
         > .p-counseling__btn-area--btn-ftf {
           margin-right: 0;
           color: #f2fcff;
           background-color: #e94d84;
-          padding: 5vw 15vw 5vw 10vw;
+          padding: 5vw 10vw 5vw 5vw;
           position: relative;
           margin-left: 10px;
           cursor: pointer;
@@ -42,7 +45,7 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 10px 0 10px 17.3px;
+            border-width: 2vw 0 2vw 3.25vw;
             border-color: transparent transparent transparent #ffffff;
             top: 42%;
             right: 11%;
@@ -53,10 +56,10 @@
           margin-left: 0;
           color: #f2fcff;
           background-color: #00ba1b;
-          padding: 5vw 15vw 5vw 10vw;
+          padding: 5vw 10vw 5vw 5vw;
           position: relative;
           cursor: pointer;
-          margin-right: 10px;
+          margin-right: 0;
           &::before {
             content: "";
             position: absolute;
@@ -64,7 +67,7 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 10px 0 10px 17.3px;
+            border-width: 2vw 0 2vw 3.25vw;
             border-color: transparent transparent transparent #ffffff;
             top: 42%;
             right: 11%;
