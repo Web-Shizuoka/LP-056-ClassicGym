@@ -21,6 +21,8 @@
   &__text {
     display: block;
     &--caution {
+      font-family: sans-serif;
+      font-weight: lighter;
       display: block;
       position: absolute;
       bottom: 5%;
@@ -66,6 +68,8 @@
       &-sp {
         display: block;
         &--caution {
+          font-family: sans-serif;
+          font-weight: lighter;
           display: block;
           position: absolute;
           text-align: left;

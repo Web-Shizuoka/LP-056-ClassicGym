@@ -15,6 +15,7 @@
       > .p-counseling--main {
         padding-top: 0;
         &-text {
+          font-weight: bold;
           color: #a28b76;
         }
       }
@@ -81,6 +82,7 @@
   &--main {
     padding-top: 33px;
     &-text {
+      font-weight: bold;
       color: #a28b76;
     }
   }
@@ -154,6 +156,7 @@
     &--main {
       padding-top: 33px;
       &-text {
+        font-weight: bold;
         color: #a28b76;
       }
     }
