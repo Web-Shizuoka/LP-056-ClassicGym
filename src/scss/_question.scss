@@ -19,9 +19,12 @@
     column-gap: 30px;
     row-gap: 30px;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
   }
   &__item {
-    width: 100%;
+    width: 580px;
     &--Q {
       font-size: 30px;
       font-family: "Arial", "メイリオ";

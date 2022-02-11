@@ -8,4 +8,9 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  @include sp {
+    height: 400px;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
 }
