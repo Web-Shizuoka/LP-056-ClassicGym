@@ -12,9 +12,15 @@
         bottom: 0;
         z-index: 1;
       }
+      > .p-counseling--main {
+        padding-top: 0;
+        &-text {
+          color: #a28b76;
+        }
+      }
       > .p-counseling__btn-area {
-        padding-top: 34px;
-        padding-bottom: 54px;
+        padding-top: 0;
+        padding-bottom: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
