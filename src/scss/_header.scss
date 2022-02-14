@@ -32,6 +32,10 @@
       display: flex;
       padding: 10px 160px;
       border-bottom: solid 5px #a28b76;
+      
+      @include pcmini {
+        padding: 10px 20px;
+      }
 
       .logo {
         width: 260px;

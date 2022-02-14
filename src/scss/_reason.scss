@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1200px) {
   .p-reason {
     background-color: #ffffff;
     text-align: center;
@@ -115,7 +115,7 @@
       &-sp {
         display: block;
         line-height: 1.3;
-        font-size: 8.5vw;
+        font-size: 5.5vw;
         font-family: serif;
         font-weight: bolder;
       }
@@ -131,14 +131,14 @@
         margin-top: 30px;
       }
       &--number {
-        font-size: 18vw;
+        font-size: 9vw;
         color: #e94d84;
         font-style: italic;
         line-height: 1;
         font-family: serif;
       }
       &--text {
-        font-size: 4vw;
+        font-size: 2vw;
         display: grid;
         place-items: center;
         color: #888888;
@@ -154,7 +154,7 @@
     &__text {
       &-sp {
         margin-bottom: 20px;
-        font-size: 4vw;
+        font-size: 2vw;
         text-align: left;
       }
     }
@@ -163,6 +163,29 @@
       margin-bottom: auto;
       > img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p-reason {
+    &__title {
+      &-sp {
+        font-size: 8.5vw;
+      }
+    }
+    &__number-title {
+      &--number {
+        font-size: 18vw;
+      }
+      &--text {
+        font-size: 4vw;
+      }
+    }
+    &__text {
+      &-sp {
+        font-size: 4vw;
       }
     }
   }

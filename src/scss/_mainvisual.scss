@@ -60,6 +60,21 @@
       font-style: italic;
       transform: skewY(-4deg);
       color: #ffffff;
+      
+      @media screen and (max-width: 1600px) {
+        font-size: 50px;
+        width: 700px;
+      }
+      
+      @include pcmini {
+        font-size: 40px;
+        width: 600px;
+      }
+      
+      @media screen and (max-width: 1280px) {
+        font-size: 30px;
+        width: 400px;
+      }
     }
     &--first {
       position: relative;
@@ -183,12 +198,8 @@
       width: 100vw;
       //margin: 0 auto;
       position: relative;
-      height: 100vw;
-
-      @include pcmini {
-        height: 550px;
-        padding-top: 0;
-      }
+      height: 550px;
+      padding-top: 0;
 
       &--img-main {
         height: 100vw;
@@ -204,17 +215,15 @@
           object-position: 100% 100%;
           position: relative;
         }
-        @include pcmini {
-          bottom: auto;
-          top: 20px;
-          //right: 15;
-          //left: 85%;
+        bottom: auto;
+        top: 20px;
+        //right: 15;
+        //left: 85%;
 
-          & img {
-            width: 100%;
-            object-fit: cover;
-            object-position: 100% 0;
-          }
+        & img {
+          width: 100%;
+          object-fit: cover;
+          object-position: 100% 0;
         }
       }
     }
@@ -225,6 +234,7 @@
       left: 0;
       width: 100%;
       &--text {
+        width: 100%;
         margin-top: 0;
         font-size: 7.5vw;
         font-family: serif;

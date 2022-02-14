@@ -1,6 +1,8 @@
 .pricecards--area {
+  max-width: $inner-width-pc;
   width: 100%;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 ul {
@@ -18,15 +20,39 @@ ul {
     -webkit-justify-content: center;
     align-items: flex-end;
   }
-  > .p-pricecard {
-    flex: 0 0 33%;
+  
+  .p-pricecard.gym {
+    width: calc(460 / 1200 * 100%);
+    
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+  
+  .p-pricecard.other-gym {
+    width: calc(360 / 1200 * 100%);
+    
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+   
+  .p-pricecard {
     text-align: center;
     border: 1px solid #eee;
     border-radius: 10px 10px 0 0;
     //padding-bottom: 1rem;
     box-sizing: border-box;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-right: calc(10 / 1200 * 100%);
+    
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    
+    @media screen and (max-width: 750px) {
+      margin-right: 0;
+    }
+      
     > p {
       //background: #cecece;
       border-radius: 10px 10px 0 0;
@@ -129,8 +155,6 @@ ul {
       border-radius: 10px 10px 0 0;
       //padding-bottom: 1rem;
       box-sizing: border-box;
-      margin-left: 5px;
-      margin-right: 5px;
       > p {
         //background: #cecece;
         border-radius: 10px 10px 0 0;
@@ -162,14 +186,32 @@ ul {
         &__other {
           background-color: #ffffff;
           border-radius: 10px 10px 0 0;
-          font-size: 9vw;
+          font-size: 7vw;
 
           padding-left: 26px;
           padding-right: 26px;
           padding-top: 22px;
           padding-bottom: 17px;
           > .total {
-            font-size: 6vw;
+            font-size: 5vw;
+          }
+          > .yen {
+            font-size: 5vw;
+          }
+          > .tax {
+            font-size: 4vw;
+          }
+        }
+        &.price-gym {
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 29px;
+          padding-bottom: 21px;
+          font-size: 9vw;
+          color: #e94d84;
+          text-align: center;
+          > .total {
+            font-size: 5vw;
           }
           > .yen {
             font-size: 6vw;
@@ -178,31 +220,12 @@ ul {
             font-size: 5vw;
           }
         }
-        &.price-gym {
-          padding-left: 0;
-          padding-right: 0;
-          padding-top: 29px;
-          padding-bottom: 21px;
-          font-size: 10vw;
-          color: #e94d84;
-          text-align: center;
-          > .total {
-            font-size: 7vw;
-          }
-          > .yen {
-            font-size: 7vw;
-          }
-          > .tax {
-            font-size: 6vw;
-          }
-        }
       }
       &.gym {
         //border: 3px solid #06c7ea;
         //padding-bottom: 3rem;
         background-color: #ffffff;
         flex-basis: auto;
-        width: 90%;
         > h4 {
           padding: 20px;
         }

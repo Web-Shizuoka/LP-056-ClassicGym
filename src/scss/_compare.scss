@@ -1,7 +1,11 @@
 .p-compare {
-  height: 652px;
   background-color: #f6f3f1;
   text-align: center;
+  padding-bottom: 60px;
+  @media screen and (max-width: 750px) {
+    padding-bottom: 30px;
+  }
+  
   &__catch {
     padding-top: 57px;
     &--main-catch {

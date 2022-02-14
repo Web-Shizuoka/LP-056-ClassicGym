@@ -1,16 +1,17 @@
 .p-top {
   //background-color: $top-background;
   //padding-bottom: 44px;
-  height: 1550px;
+  //height: 1550px;
 
   padding-top: 95px;
   padding-bottom: 75px;
 
   &__inner {
     max-width: $inner-width-pc;
-    //width: 100%;
+    width: 100%;
     margin: 0 auto;
     //padding-top: 92px;
+    padding: 0 40px;
   }
 
   &__title-text {
@@ -119,9 +120,7 @@
   }
 
   &__img-outer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
   }
 
   &__link {
@@ -142,13 +141,6 @@
 
     padding-top: 50px;
     padding-bottom: 50px;
-
-    &__inner {
-      max-width: $inner-width-pc;
-      //width: 100%;
-      margin: 0 auto;
-      //padding-top: 92px;
-    }
 
     &__title-text {
       font-size: 8vw;
