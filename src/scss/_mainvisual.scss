@@ -121,6 +121,22 @@
       text-align: left;
       margin-left: 17%;
       font-weight: lighter;
+      
+      @media screen and (max-width: 1600px) {
+        font-size: 50px;
+        margin-left: 100px;
+      }
+      
+      @include pcmini {
+        font-size: 40px;
+        margin-left: 50px;
+      }
+      
+      @media screen and (max-width: 1280px) {
+        font-size: 30px;
+        width: 400px;
+      }
+      
       > .right-x {
         position: absolute;
         display: block;
@@ -129,7 +145,16 @@
         width: 30%;
         height: 1px;
         background: #a28b76;
+        
+        @include pcmini {
+          right: 28%;
+        }
+        
+        @media screen and (max-width: 1280px) {
+          right: 15%;
+        }
       }
+      
       > .right-y {
         position: absolute;
         display: block;
@@ -138,6 +163,14 @@
         height: 110%;
         width: 1px;
         background: #a28b76;
+        
+        @include pcmini {
+          right: 32%;
+        }
+        
+        @media screen and (max-width: 1280px) {
+          right: 19%;
+        }
       }
 
       > .left-x {
@@ -148,6 +181,10 @@
         width: 30%;
         height: 1px;
         background: #a28b76;
+        
+        @include pcmini {
+        
+        }
       }
       > .left-y {
         position: absolute;
@@ -157,6 +194,10 @@
         height: 110%;
         width: 1px;
         background: #a28b76;
+        
+        @include pcmini {
+        
+        }
       }
     }
     &--contents {
