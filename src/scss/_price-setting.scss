@@ -85,19 +85,72 @@ ul {
         background-color: #ffffff;
         border-radius: 10px 10px 0 0;
         font-size: 36.6px;
+        
+        @media screen and (max-width: 1600px) {
+            
+        }
+        
+        @include pcmini {
+          
+        }
+        
+        @media screen and (max-width: 1280px) {
+          font-size: 26px;
+        }
 
         padding-left: 26px;
         padding-right: 26px;
         padding-top: 22px;
         padding-bottom: 17px;
+        
+        @media screen and (max-width: 1280px) {
+          padding: 10px;
+        }
+        
         > .total {
-          font-size: 27.45px;
+          font-size: 24px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            font-size: 20px;
+          }
         }
         > .yen {
           font-size: 27.45px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            font-size: 20px;
+          }
         }
         > .tax {
-          font-size: 23.79px;
+          font-size: 20px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            font-size: 16px;
+          }
         }
       }
       &.price-gym {
@@ -105,16 +158,70 @@ ul {
         padding-right: 34px;
         padding-top: 29px;
         padding-bottom: 21px;
+        
+        @media screen and (max-width: 1280px) {
+          padding: 10px;
+        }
+        
         font-size: 48.26px;
+        
+        @media screen and (max-width: 1600px) {
+            
+        }
+        
+        @include pcmini {
+          
+        }
+        
+        @media screen and (max-width: 1280px) {
+          font-size: 40px;
+        }
+        
         color: #e94d84;
         > .total {
-          font-size: 36.19px;
+          font-size: 30px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            font-size: 26px;
+          }
         }
         > .yen {
           font-size: 36.19px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            font-size: 26px;
+          }
         }
         > .tax {
-          font-size: 31.37px;
+          font-size: 22px;
+          
+          @media screen and (max-width: 1600px) {
+            
+          }
+          
+          @include pcmini {
+            
+          }
+          
+          @media screen and (max-width: 1280px) {
+            
+          }
         }
       }
     }
