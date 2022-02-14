@@ -101,6 +101,20 @@
     }
   }
 }
+@media screen and (max-width: 950px) {
+  .p- {
+    &header {
+      &__wrap {
+        .logo {
+          width: 130px;
+          &__img {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 750px) {
   .p- {
     &header {
@@ -131,7 +145,7 @@
           justify-content: flex-end;
 
           & > * {
-            margin-right: 15px;
+            margin-right: 0;
           }
 
           &:last-of-type {
@@ -141,7 +155,6 @@
           .tel {
             display: flex;
             align-items: center;
-            width: 45vw;
             &__img {
               width: 5vw;
             }
