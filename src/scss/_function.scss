@@ -14,9 +14,14 @@ $inner-width-pc: 1000px;
     @content;
   }
 }
+@mixin spmini {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
 
 @mixin pcmini {
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1400px) {
     @content;
   }
 }

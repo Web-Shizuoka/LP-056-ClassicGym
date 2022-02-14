@@ -2,14 +2,18 @@
   width: 100%;
   &__google {
     margin: 0 auto;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
-
-    @media screen and (max-width: 750px) {
+    &-iframe {
+      height: 2300px;
+      @include spmini {
+        height: 2400px;
+      }
+    }
+    @include sp {
       margin-top: 50px;
       margin-bottom: 50px;
     }

@@ -1,9 +1,14 @@
 .p-info {
   text-align: center;
   &__title {
-    font-size: 8vw;
-    padding-top: 12vw;
+    font-size: 60px;
+    padding-top: 100px;
+    padding-bottom: 35px;
     font-family: serif;
+    @include sp {
+      font-size: 8vw;
+      padding-top: 12vw;
+    }
   }
   &__contents {
     margin: 0 auto;
