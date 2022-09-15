@@ -1,75 +1,42 @@
 .p-motto {
-  height: 504px;
-  background-color: black;
+  height: 616px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  text-align: center;
   &__img {
-    //position: relative;
+    position: absolute;
     display: block;
-    height: 504px;
+    height: 616px;
     width: 100%;
     object-fit: cover;
-    opacity: 0.6;
-    //object-position: top 30px ;
+    z-index: -1;
     &-sp {
       display: none;
     }
   }
   &__img-text {
-    position: absolute;
-    width: 908px;
-    height: 85px;
-    top: 0;
-    left: 50%;
-    text-align: center;
-    background: linear-gradient(
-      to right,
-      rgba($color: #ffffff, $alpha: 0) 0%,
-      rgba($color: #ffffff, $alpha: 0.5) 10%,
-      rgba($color: #ffffff, $alpha: 0.5) 90%,
-      rgba($color: #ffffff, $alpha: 0) 100%
-    ); //rgba($color: #ffffff, $alpha: 0.7);
-    transform: translate(-50%, 50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
   }
   &__title {
-    font-size: 39.18px;
-    color: #e94d84;
+    width: 720px;
+    font-size: 40px;
+    line-height: 54px;
+    color: #fff;
     font-family: serif;
     font-weight: bold;
-  }
-  &__arrow {
-    height: 17px;
-    width: 40px;
-    background-color: #e94d84;
-    position: relative;
-    //margin-top: 20px;
-    display: inline-block;
-    top: -5px;
-    margin-right: 60px;
-    margin-left: 30px;
-    &::after {
-      content: "";
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 18.5px 0 18.5px 32px;
-      border-color: transparent transparent transparent #e94d84;
-      position: absolute;
-      top: -60%;
-      left: 100%;
-    }
+    border-bottom: 1px solid;
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
   &__content {
-    position: absolute;
-    left: 25%;
-    bottom: 69px;
+    width: 1200px;
+    margin: 0 auto;
     &--text {
-      font-size: 40px;
-      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
       color: #ffffff;
       font-family: serif;
       display: block;
@@ -82,40 +49,27 @@
 
 @media screen and (max-width: 750px) {
   .p-motto {
-    height: 100vw;
-    background-color: black;
+    height: 610px;
     position: relative;
     text-align: center;
     &__img {
-      //position: relative;
       height: 100%;
       width: 100%;
-      object-fit: none;
-      opacity: 0.6;
+      object-fit: cover;
       display: none;
       &-sp {
         display: block;
         height: 100%;
         width: 100%;
         object-fit: cover;
-        opacity: 0.6;
       }
-      //object-position: top 30px ;
     }
     &__img-text {
       position: absolute;
       width: 100%;
-      height: 11vw;
-      top: 5%;
+      top: -1%;
       left: 50%;
       text-align: center;
-      background: linear-gradient(
-        to right,
-        rgba($color: #ffffff, $alpha: 0.2) 0%,
-        rgba($color: #ffffff, $alpha: 0.6) 10%,
-        rgba($color: #ffffff, $alpha: 0.6) 90%,
-        rgba($color: #ffffff, $alpha: 0.2) 100%
-      ); //rgba($color: #ffffff, $alpha: 0.7);
       transform: translate(-50%, 50%);
       display: flex;
       flex-direction: column;
@@ -124,14 +78,12 @@
     }
     &__title {
       font-size: 5.5vw;
-      color: #e94d84;
-      font-family: serif;
-      font-weight: bold;
+      line-height: 1.3;
+      width: 90%;
     }
     &__arrow {
       height: 3vw;
       width: 6vw;
-      background-color: #e94d84;
       position: relative;
       //margin-top: 20px;
       display: inline-block;
@@ -152,15 +104,15 @@
     }
     &__content {
       position: absolute;
-      left: 50%;
-      bottom: 40%;
-      transform: translate(-50%, 50%);
+      left: 0%;
+      top: 24vw;
       width: 100%;
+      padding: 20px;
       &--text {
         display: none;
         &-sp {
           width: 100%;
-          font-size: 6vw;
+          font-size: 13.8px;
           text-align: center;
           color: #ffffff;
           font-family: serif;

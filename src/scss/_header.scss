@@ -31,7 +31,7 @@
     &__wrap {
       display: flex;
       padding: 10px 160px;
-      border-bottom: solid 5px #a28b76;
+      border-bottom: solid 5px #50d5f1;
 
       .logo {
         width: 260px;
@@ -60,6 +60,7 @@
           display: flex;
           align-items: center;
           .tel_txt_num {
+            font-family: Impact;
             font-size: 36px;
             color: #000000;
           }
@@ -106,7 +107,9 @@
       &__wrap {
         display: flex;
         padding: 20px;
-        border-bottom: solid 5px #a28b76;
+        border-bottom: solid 5px #50d5f1;
+        justify-content: space-between;
+        align-items: center;
 
         .logo {
           width: 45vw;
@@ -138,6 +141,7 @@
             display: flex;
             align-items: center;
             width: 45vw;
+            justify-content: flex-end;
             &__img {
               width: 5vw;
             }

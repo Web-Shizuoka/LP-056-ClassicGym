@@ -1,27 +1,21 @@
 $bg: #f6f3f1;
 $course-width: 1024px;
 .p-course {
-  &__one-month {
-    width: $course-width;
-    height: 100%;
-    background-color: $bg;
+  &__contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 85%;
     margin: 0 auto;
-    margin-top: 87px;
-    padding-bottom: 45px;
-    &--area {
-      width: 725px;
-      margin: 0 auto;
-    }
   }
-  &__two-month {
-    width: $course-width;
+  &__one-month {
+    width: 90%;
     height: 100%;
-    background-color: $bg;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 0px;
     padding-bottom: 45px;
     &--area {
-      width: 725px;
+      width: auto;
       margin: 0 auto;
     }
   }
@@ -46,12 +40,12 @@ $course-width: 1024px;
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
-    width: 725px;
+    width: 100%;
     font-size: 40px;
     color: #ffffff;
-    background: #a28b76;
+    background: #50d5f1;
     height: 80px;
-    font-family: serif;
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
     &::before {
       content: "";
       position: absolute;
@@ -59,7 +53,7 @@ $course-width: 1024px;
       left: 50%;
       margin-left: -15px;
       border: 15px solid transparent;
-      border-top: 15px solid #a28b76;
+      border-top: 15px solid #50d5f1;
     }
     &--outer {
       display: table;
@@ -76,10 +70,12 @@ $course-width: 1024px;
     }
   }
   &__price {
-    font-size: 81.85px;
+    font-size: 60px;
     color: #e94d84;
+    line-height: 30px;
+    margin-top: 50px;
     &--tax {
-      font-size: 41px;
+      font-size: 26px;
     }
     &--sheet {
       font-size: 41px;
@@ -87,14 +83,13 @@ $course-width: 1024px;
     &--menu {
       margin: 0 auto;
       color: black;
-      width: 973px;
-      height: 63px;
-      font-size: 30px;
-      background-color: #ffffff;
+      font-size: 20px;
+      background-color: #e6fbff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 10px 0;
       margin-top: 16px;
       &-sp {
         display: none;
@@ -130,72 +125,81 @@ $course-width: 1024px;
       }
     }
   }
+  &__initiation-fee{
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    & .small1{
+      font-size: 20px;
+    }
+    & .small2{
+      font-size: 26px;
+    }
+    & .small3{
+      font-size: 18px;
+    }
+    & .small4{
+      font-size: 22px;
+    }
+    &--title {
+      & .bg-blue{
+        width: 350px;
+        display: block;
+        font-size: 40px;
+        line-height: 48px;
+        background-color: #50d5f1;
+        color: #fff;
+        padding: 10px 0;
+      }
+    }
+    &--price{
+      width: 450px;
+      font-size: 50px;
+      &.text_pink{
+        color: #e94d84;
+        font-size: 60px;
+        line-height: 1;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 15%;
+          margin-left: -15px;
+          border: 15px solid transparent;
+          border-left: 15px solid #000;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
   $width: 90vw;
   $height: 100%;
   .p-course {
+    &__contents{
+      grid-template-columns: 1fr;
+      column-gap: 20px;
+      width: 85%;
+      margin: 0 auto;
+    }
     &__one-month {
-      width: $width;
-      height: $height;
-      background-color: $bg;
-      margin: 0 auto;
-      margin-top: 5vw;
-      padding-bottom: 46px;
-      &--area {
-        width: 90vw;
-        margin: 0 auto;
-      }
-    }
-    &__two-month {
-      width: $width;
-      height: $height;
-      background-color: $bg;
-      margin: 0 auto;
-      margin-top: 40px;
-      padding-bottom: 46px;
-      &--area {
-        width: 90vw;
-        margin: 0 auto;
-      }
-    }
-    &__after {
-      width: $width;
-      height: max-content;
-      background-color: $bg;
-      margin: 0 auto;
-      margin-top: 40px;
-      padding-bottom: 45px;
-      &--area {
-        width: 90vw;
-        margin: 0 auto;
-      }
+      padding-bottom: 10px;
     }
     &__limit {
       font-size: 4vw;
       color: #000000;
-      font-family: sans-serif;
     }
     &__ballon {
-      position: relative;
       display: inline-block;
-      margin: 1.5em 0;
-      width: 85vw;
+      margin: 1.5em 0 0;
       font-size: 5vw;
-      color: #ffffff;
-      background: #a28b76;
       height: 12vw;
-      font-family: serif;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 98%;
-        left: 50%;
-        margin-left: -15px;
-        border: 15px solid transparent;
-        border-top: 15px solid #a28b76;
-      }
       &--outer {
         display: table;
         text-align: center;
@@ -212,7 +216,7 @@ $course-width: 1024px;
     }
     &__price {
       font-size: 10vw;
-      color: #e94d84;
+      margin-top: 8vw;
       &--tax {
         font-size: 5vw;
       }
@@ -222,19 +226,16 @@ $course-width: 1024px;
       &--menu {
         display: none;
         &-sp {
-          display: block;
           margin: 0 auto;
           color: black;
-          //width: 100%;
-          height: 20vw;
           font-size: 4vw;
-          font-family: sans-serif;
-          background-color: #ffffff;
+          background-color: #e6fbff;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin: 25px 20px 0px 20px;
+          padding: 10px 0;
+          margin-top: 16px;
         }
       }
     }
@@ -271,6 +272,48 @@ $course-width: 1024px;
           font-family: sans-serif;
           font-weight: lighter;
           display: table-cell;
+        }
+      }
+    }
+    &__initiation-fee{
+      font-size: 5.6vw;
+      display: block;
+      margin: 50px 0;
+
+      & .small1{
+        font-size: 4vw;
+      }
+      & .small2{
+        font-size: 4.6vw;
+      }
+      & .small3{
+        font-size: 3.8vw;
+      }
+      & .small4{
+        font-size: 4.2vw;
+      }
+      &--title {
+        & .bg-blue{
+          width: 100%;
+          font-size: 6vw;
+          line-height: 6.8vw;
+          padding: 10px 0;
+          margin-bottom: 10px;
+        }
+      }
+      &--price{
+        width: 100%;
+        font-size: 7vw;
+        &.text_pink{
+          margin-top: 30px;
+          font-size: 10vw;
+          &::before{
+            top: -10px;
+            left: 50%;
+            margin-left: -15px;
+            border: 15px solid transparent;
+            border-top: 15px solid #000;
+          }
         }
       }
     }

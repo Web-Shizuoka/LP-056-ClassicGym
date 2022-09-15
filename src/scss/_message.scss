@@ -1,65 +1,62 @@
 .p-message {
   font-size: 40px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  font-family: serif;
-  color: #383838;
+  color: #50d5f1;
   font-weight: bold;
   &__first {
     padding: 70px 0;
-    background-color: #fff1f6;
-  }
-  &__second {
-    margin-top: 88px;
-    padding: 70px 0;
-    background-color: #fff1f6;
-    position: relative;
+    & .p-message__text{
+      display: inline-block;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 60%;
+        background-color: #faff6d;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
   }
   &__text {
     display: block;
-    &--caution {
-      font-family: sans-serif;
-      font-weight: lighter;
-      display: block;
-      position: absolute;
-      bottom: 5%;
-      right: 19%;
-      font-size: 16px;
-      color: #000000;
-    }
     &-sp {
       display: none;
-      &--caution {
-        display: none;
-      }
     }
   }
 }
 
 @media screen and (max-width: 750px) {
   .p-message {
-    font-size: 6vw;
+    font-size: 5vw;
+    line-height: 2;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    font-family: serif;
-    color: #383838;
-    font-weight: bold;
     &__first {
-      padding: 10vw 0;
-      background-color: #fff1f6;
-    }
-    &__second {
-      margin-top: 50px;
-      padding: 10vw 0;
-      padding-bottom: 20vw;
-      background-color: #fff1f6;
-      position: relative;
+      display: block;
+      padding: 0 0 40px;
+      & .p-message__text{
+        display: none;
+      }
+      & .p-message__text-sp{
+        display: inline-block;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 40%;
+          background-color: #faff6d;
+          bottom: 2vw;
+          left: 0;
+          z-index: -1;
+        }
+      }
     }
     &__text {
       display: none;

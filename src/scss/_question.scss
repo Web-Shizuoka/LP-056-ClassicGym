@@ -5,10 +5,13 @@
     display: block;
   }
   &__title {
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+    background-color: #50d5f1;
+    color: #fff;
     font-size: 60px;
-    margin-top: 130px;
-    margin-bottom: 46px;
-    font-family: serif;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 80px auto 40px;
   }
   &__area {
     margin: 0 360px;
@@ -25,6 +28,8 @@
   }
   &__item {
     width: 580px;
+    border: 1px solid #50d5f1;
+
     &--Q {
       font-size: 30px;
       font-family: "Arial", "メイリオ";
@@ -38,7 +43,7 @@
     }
     &--header {
       height: 60px;
-      background-color: #a28b76;
+      background-color: #50d5f1;
       font-size: 16px;
       color: #ffffff;
       display: flex;
@@ -47,7 +52,6 @@
     }
     &--content {
       font-size: 16px;
-      background-color: #f6f3f1;
       display: flex;
       &--text {
         color: #000000;
@@ -63,8 +67,6 @@
 
 @media screen and (max-width: 750px) {
   .p-question {
-    background-color: #ffffff;
-    text-align: center;
     &__br {
       display: none;
     }
@@ -72,11 +74,11 @@
       font-size: 9vw;
       margin-top: 10vw;
       margin-bottom: 7vw;
-      font-family: serif;
     }
     &__area {
       margin: 0 auto;
       margin-bottom: 50px;
+      padding: 0 20px;
     }
     &__items {
       display: flex;
@@ -91,8 +93,6 @@
     }
     &__item {
       width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
       &--Q {
         font-size: 5.5vw;
         font-family: "Arial", "メイリオ";
@@ -103,12 +103,10 @@
         font-size: 5.5vw;
         font-family: "Arial", "メイリオ";
         margin: 17px 20px 17px 20px;
-        color: #a28b76;
         padding-right: 10px;
       }
       &--header {
         height: 100px;
-        background-color: #a28b76;
         font-size: 14px;
         color: #ffffff;
         display: flex;
@@ -118,7 +116,6 @@
       }
       &--content {
         font-size: 16px;
-        background-color: #f6f3f1;
         display: flex;
         &--text {
           color: #000000;

@@ -1,8 +1,15 @@
 .p-counseling {
   &.first {
     display: block;
-    @include sp {
-      display: none;
+    & .p-counseling--main{
+      @include sp {
+        display: none;
+      }
+    }
+    & .p-counseling__btn-area{
+      @include sp {
+        display: none;
+      }
     }
     &-sp {
       display: none;
@@ -10,11 +17,12 @@
         display: block;
         position: fixed;
         bottom: -10%;
-        z-index: 1;
-        border-bottom: none;
+        z-index: 100;
+        border: none;
         opacity: 0;
         width: 100vw;
         transition: bottom 0.5s, opacity 0.5s;
+        padding: 10px 0;
         &.fadein {
           bottom: 0;
           opacity: 1;
@@ -30,19 +38,12 @@
       > .p-counseling__btn-area {
         padding-top: 0;
         padding-bottom: 5px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        column-gap: 10px;
-        > .p-counseling__btn-area--btn-ftf {
-          margin-right: 0;
+        > .p-counseling__btn-area--btn {
+          margin-top: 2vw;
           color: #f2fcff;
           background-color: #e94d84;
-          padding: 5vw 10vw 5vw 5vw;
+          padding: 2vw 10vw 2vw 5vw;
           position: relative;
-          margin-left: 10px;
           cursor: pointer;
           &::before {
             content: "";
@@ -53,52 +54,47 @@
             border-style: solid;
             border-width: 2vw 0 2vw 3.25vw;
             border-color: transparent transparent transparent #ffffff;
-            top: 42%;
-            right: 11%;
-          }
-        }
-        > .p-counseling__btn-area--btn-line {
-          margin-top: 0px;
-          margin-left: 0;
-          color: #f2fcff;
-          background-color: #00ba1b;
-          padding: 5vw 10vw 5vw 5vw;
-          position: relative;
-          cursor: pointer;
-          margin-right: 0;
-          &::before {
-            content: "";
-            position: absolute;
-            display: inline-block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 2vw 0 2vw 3.25vw;
-            border-color: transparent transparent transparent #ffffff;
-            top: 42%;
-            right: 11%;
+            top: 31.5%;
+            right: 5.5%;
           }
         }
       }
     }
   }
   text-align: center;
-  border-top: 6px solid #a28b76;
-  border-bottom: 6px solid #a28b76;
-  background-color: #f4f4f4;
+  background: repeating-linear-gradient(120deg, #50d5f1, #50d5f1 20px, #68dbf3 20px, #68dbf3 40px);
   font-size: 30px;
   font-family: "Hiragino Sans";
+  &__comic {
+    background-color: #f3fdff;
+    padding: 80px 0;
+    > div{
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      > img{
+        margin: 10px;
+        width: 45%;
+      }
+      > img:nth-of-type(2){
+        height: 99%;
+      }
+    }
+  }
   &--main {
     padding-top: 33px;
     &-text {
       font-weight: bold;
-      color: #a28b76;
+      color: #e94d84;
+      font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
     }
   }
   &__btn-area {
     padding-top: 34px;
     padding-bottom: 54px;
-    &--btn-ftf {
+    &--btn {
       margin-right: 30px;
       color: #f2fcff;
       background-color: #e94d84;
@@ -118,25 +114,11 @@
         right: 11%;
       }
     }
-    &--btn-line {
-      margin-left: 30px;
-      color: #f2fcff;
-      background-color: #00ba1b;
-      padding: 27px 88px 28px 61px;
-      position: relative;
-      cursor: pointer;
-      &::before {
-        content: "";
-        position: absolute;
-        display: inline-block;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 6px 0 6px 10.4px;
-        border-color: transparent transparent transparent #ffffff;
-        top: 42%;
-        right: 11%;
-      }
+    > p{
+      margin-top: 40px;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: normal;
     }
   }
 }
@@ -156,69 +138,41 @@
 
 @media screen and (max-width: 750px) {
   .p-counseling {
-    text-align: center;
-    border-top: 6px solid #a28b76;
-    border-bottom: 6px solid #a28b76;
-    background-color: #f4f4f4;
+    border-top: 6px solid #50d5f1;
+    border-bottom: 6px solid #50d5f1;
     font-size: 4vw;
-    font-family: "Hiragino Sans";
+    background: repeating-linear-gradient(120deg, #50d5f1, #50d5f1 10px, #68dbf3 10px, #68dbf3 20px);
     &--main {
       padding-top: 33px;
-      &-text {
-        font-weight: bold;
-        color: #a28b76;
-      }
     }
     &__btn-area {
       padding-top: 3vw;
       padding-bottom: 7vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-      &--btn-ftf {
+      &--btn {
+        display: inline-block;
         margin-right: 0;
         color: #f2fcff;
         background-color: #e94d84;
         padding: 3vw 15vw 3vw 13vw;
         position: relative;
         cursor: pointer;
-        &::before {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 2vw 0 2vw 3.25vw;
-          border-color: transparent transparent transparent #ffffff;
-          top: 38%;
-          right: 11%;
-        }
       }
-      &--btn-line {
-        margin-left: 0;
-        margin-top: 30px;
-        color: #f2fcff;
-        background-color: #00ba1b;
-        padding: 3vw 15vw 3vw 11.5vw;
-        position: relative;
-        cursor: pointer;
-        &::before {
-          content: "";
-          position: absolute;
-          display: inline-block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 2vw 0 2vw 3.25vw;
-          border-color: transparent transparent transparent #ffffff;
-          top: 38%;
-          right: 11%;
+      > p{
+        margin-top: 2vw;
+        font-size: 3vw;
+        line-height: 1;
+      }
+    }
+    &__comic {
+      padding: 30px 0;
+      > div{
+        > img{
+          margin: 8px;
         }
       }
     }
   }
+
   .p-after-counseling {
     background-color: #f6f3f1;
     text-align: center;

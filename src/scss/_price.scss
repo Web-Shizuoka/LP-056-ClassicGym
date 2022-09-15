@@ -1,13 +1,15 @@
 .p-price {
-  background-color: #fff1f6;
+  background-color: #e6fbff;
   text-align: center;
-  padding-bottom: 99px;
+  padding: 99px 0;
   &__title {
     font-size: 60px;
-    padding-top: 120px;
-    padding-bottom: 67px;
-    font-family: serif;
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
     font-weight: bold;
+    background-color: #50d5f1;
+    color: #fff;
+    letter-spacing: 2rem;
+    padding: 10px 0;
   }
   &__area {
     width: 1200px;
@@ -18,13 +20,13 @@
   }
   &__join {
     &--text {
-      font-size: 60px;
-      padding-top: 92px;
-      font-family: serif;
+      font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+      font-size: 40px;
+      padding-top: 70px;
       font-weight: bold;
     }
     &--under {
-      background: linear-gradient(transparent 70%, #fff1f6 50%);
+      background: linear-gradient(transparent 30%, #faff6d 50%);
       padding: 0 10px;
     }
     &--number {
@@ -40,41 +42,28 @@
 
 @media screen and (max-width: 750px) {
   .p-price {
-    background-color: #fff1f6;
     text-align: center;
-    padding-bottom: 50px;
+    padding: 50px 20px 50px;
     &__title {
-      font-size: 8vw;
-      padding-top: 12vw;
-      padding-bottom: 7vw;
-      font-family: serif;
-      font-weight: bold;
+      font-size: 7vw;
+      letter-spacing: 1rem;
     }
     &__area {
       width: 100%;
-      margin-top: 67px;
       background-color: #ffffff;
       margin: 0 auto;
-      padding-bottom: 50px;
+      padding-bottom: 10px;
     }
     &__join {
       &--text {
-        font-size: 8vw;
-        padding-top: 10vw;
-        font-family: serif;
-        font-weight: bold;
-      }
-      &--under {
-        background: linear-gradient(transparent 70%, #fff1f6 50%);
-        padding: 0 10px;
+        font-size: 6vw;
+        padding-top: 8vw;
       }
       &--number {
         font-size: 16vw;
-        color: #e94d84;
       }
       &--yen {
         font-size: 5vw;
-        color: #e94d84;
       }
     }
   }

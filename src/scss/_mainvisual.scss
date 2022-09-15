@@ -1,5 +1,7 @@
 .p-mainvisual {
   background-color: $color-key;
+  border-bottom: solid 5px #50d5f1;
+
   &__bg {
     display: block;
     &-sp {
@@ -49,25 +51,35 @@
   }
   &__catch-copy {
     position: absolute;
-    width: 810px;
-    height: 100%;
     top: 0;
-    left: 10%;
+    left: 6%;
     &--text {
-      margin-top: 100px;
+      margin-top: 0px;
       font-size: 55.38px;
-      font-family: serif;
-      font-style: italic;
-      transform: skewY(-4deg);
-      color: #ffffff;
+      font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+      transform:rotate(-3deg);
+      color: #50d5f1;
+      text-shadow: #fff 2px 0px,  #fff -2px 0px, #fff 0px -2px, #fff 0px 2px, #fff 2px 2px , #fff -2px 2px,
+                   #fff 2px -2px, #fff -2px -2px, #fff 1px 2px,  #fff -1px 2px, #fff 1px -2px, #fff -1px -2px,
+                   #fff 2px 1px,  #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
     }
     &--first {
-      position: relative;
       z-index: 1;
-      text-align: center;
-      margin: 0 auto;
-      &::before {
-        transform: skewX(-15deg);
+      margin: 30px auto -10px;
+      & span{
+        vertical-align: middle;
+        margin-left: -11px;
+        z-index: -1;
+        position: relative;
+        font-size: 118px;
+        font-weight: bold;
+        text-shadow:0 0 0 #50d5f1;
+        transform:rotate(13deg);
+        display: inline-block;
+        line-height: 1;
+        padding: 10px;
+      }
+      & span::before {
         content: "";
         position: absolute;
         top: 0;
@@ -75,92 +87,84 @@
         left: 0;
         right: 0;
         z-index: -1;
-        background-color: #a28b76;
+        background-color: #fafa72;
       }
     }
     &--second {
-      position: relative;
-      z-index: 1;
-      text-align: center;
       margin: 0 auto;
-      margin-top: 30px;
-      &::before {
-        transform: skewX(-15deg);
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background-color: #a28b76;
-      }
+      margin-top: 0px;
+      font-size: 76px;
+      line-height: 1.2;
+    }
+    &--third {
+      margin: 0 auto;
     }
     &--main-catch {
-      font-size: 50px;
-      color: #a28b76;
       text-align: center;
-      margin-top: 70px;
-      position: relative;
-      line-height: 70px;
-      text-align: left;
-      margin-left: 17%;
       font-weight: lighter;
-      > .right-x {
-        position: absolute;
-        display: block;
-        top: -40%;
-        right: 15%;
-        width: 30%;
-        height: 1px;
-        background: #a28b76;
+      margin-top: 30px;
+      width: 465px;
+      & p{
+        font-size: 50px;
+        color: #fe6999;
+        font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+        text-shadow: #fff 2px 0px,  #fff -2px 0px, #fff 0px -2px, #fff 0px 2px, #fff 2px 2px , #fff -2px 2px,
+                     #fff 2px -2px, #fff -2px -2px, #fff 1px 2px,  #fff -1px 2px, #fff 1px -2px, #fff -1px -2px,
+                     #fff 2px 1px,  #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
+        position: relative;
+        display: inline;
+        z-index: 1;
       }
-      > .right-y {
+      & p::after{
         position: absolute;
-        display: block;
-        top: -70%;
-        right: 20%;
-        height: 110%;
-        width: 1px;
-        background: #a28b76;
+        content: "";
+        width: 100%;
+        height: 50%;
+        background-color: #fafa72;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
       }
-
-      > .left-x {
-        position: absolute;
-        display: block;
-        bottom: -30%;
-        left: -15%;
-        width: 30%;
-        height: 1px;
-        background: #a28b76;
-      }
-      > .left-y {
-        position: absolute;
-        display: block;
-        bottom: -50%;
-        left: -10%;
-        height: 110%;
-        width: 1px;
-        background: #a28b76;
+      & small{
+        font-size: 19px;
+        line-height: 24px;
+        color: #3b3b3b;
       }
     }
     &--contents {
-      margin-top: 70px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 12px;
+      column-gap: 20px;
       &-sp {
         display: none;
       }
       > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         font-size: 20px;
-        background-color: rgba($color: #ffffff, $alpha: 0.8);
-        padding: 20px 20px;
-        border: solid 1px #a28b76; /* 内側の線になる一本線の枠線をひく*/
-        outline: solid 2px #a28b76; /* 外側の線になる一本線の枠線をひく*/
-        outline-offset: -5px; /* 外側の線と内側の線の空き具合を調整*/
-        //margin: 5px;
+        line-height: 24px;
+        color: #fff;
+        background-color: #50d5f1;
+        padding: 15px 10px;
+        position: relative;
+        > span{
+          font-size: 26px;
+          line-height: 38px;
+          color: #fafa72;
+        }
+      }
+      > div::after{
+        content: "";
+        position: absolute;
+        border: 3px solid #50d5f1;
+        top: -6px;
+        left: -6px;
+        width: 104%;
+        height: 108.5%;
+
       }
     }
   }
@@ -179,9 +183,7 @@
     }
     //height: 705px;
     &__inner {
-      //max-width: $inner-width-pc;
       width: 100vw;
-      //margin: 0 auto;
       position: relative;
       height: 100vw;
 
@@ -192,9 +194,6 @@
 
       &--img-main {
         height: 100vw;
-        //position: absolute;
-        //left: 50%;
-
         width: 100vw;
         top: 20px;
         > img {
@@ -225,47 +224,26 @@
       left: 0;
       width: 100%;
       &--text {
-        margin-top: 0;
+        margin-top: -15px;
         font-size: 7.5vw;
-        font-family: serif;
-        font-style: italic;
-        transform: skewY(-4deg);
-        color: #ffffff;
+        text-align: center;
+        padding: 15px 0 10px;
+        background-color: rgba(239,252,255,0.9);
       }
       &--first {
         position: relative;
         z-index: 1;
-        text-align: center;
-        margin: 0 auto;
-        &::before {
-          transform: skewX(0);
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          z-index: -1;
-          background-color: rgba($color: #a28b76, $alpha: 0.9);
+        margin: 0 auto -15px;
+        & span{
+          font-size: 14vw;
         }
       }
       &--second {
         position: relative;
         z-index: 1;
-        text-align: center;
         margin: 0 auto;
         margin-top: 3vw;
-        &::before {
-          transform: skewX(0);
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          z-index: -1;
-          background-color: rgba($color: #a28b76, $alpha: 0.9);
-        }
+        font-size: 10vw;
       }
       &--main-catch {
         display: none;
@@ -274,21 +252,38 @@
         display: none;
         &-sp {
           display: block;
-          margin: 12vw 30px 0 30px;
+          margin: 28vw 30px 20px 30px;
           &-content {
             display: grid;
             grid-template-columns: 1fr;
             row-gap: 10px;
             > div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
               text-align: center;
               font-size: 4vw;
-              font-family: sans-serif;
-              background-color: #f4ede7;
-              padding: 20px 20px;
-              border: solid 1px #a28b76; /* 内側の線になる一本線の枠線をひく*/
-              outline: solid 2px #a28b76; /* 外側の線になる一本線の枠線をひく*/
-              outline-offset: -5px; /* 外側の線と内側の線の空き具合を調整*/
-              //ma
+              line-height: 4.5vw;
+              color: #fff;
+              background-color: #50d5f1;
+              padding: 15px 10px;
+              position: relative;
+              margin-bottom: 10px;
+              > span{
+                font-size: 6vw;
+                line-height: 38px;
+                color: #fafa72;
+              }
+            }
+            > div::after{
+              content: "";
+              position: absolute;
+              border: 3px solid #50d5f1;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              width: 104%;
+              height: 110.5%;
             }
           }
         }

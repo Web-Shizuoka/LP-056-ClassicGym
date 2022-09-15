@@ -17,14 +17,15 @@
     font-size: 60px;
     text-align: center;
     text-transform: uppercase;
-    font-family: serif;
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
     font-weight: bolder;
     line-height: 1;
     &--after {
-      color: #e94d84;
+      color: #50d5f1;
     }
   }
   &__subtitle-text {
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
     font-size: 30px;
     text-align: center;
     color: #8f8f8f;
@@ -152,19 +153,9 @@
 
     &__title-text {
       font-size: 8vw;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: serif;
-      font-weight: bolder;
-      line-height: 1;
-      &--after {
-        color: #e94d84;
-      }
     }
     &__subtitle-text {
       font-size: 4vw;
-      text-align: center;
-      color: #8f8f8f;
       margin-bottom: 22px;
     }
 

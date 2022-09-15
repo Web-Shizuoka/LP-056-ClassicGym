@@ -1,0 +1,122 @@
+$course-width: 1024px;
+.p-trainer {
+  background-color: #f3fdff;
+  &__inner{
+    max-width: $course-width;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+  &__title {
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+    font-size: 60.02px;
+    color: #50d5f1;
+    text-align: center;
+  }
+  &__contents {
+    background-color: #fff;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    &--img{
+      width: 30%;
+    }
+    &--textarea{
+      width: 65%;
+    }
+    &--name{
+      font-size: 24.01px;
+      color: #50d5f1;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid;
+    }
+    &--comment{
+      font-size: 16.01px;
+      line-height: 26.01px;
+    }
+    &--ballon{
+      border: 2px solid #50d5f1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px 0;
+      background: #FFF;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        margin-top: -13px;
+        border: 13px solid transparent;
+        border-right: 13px solid #fff;
+        z-index: 2;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -29px;
+        margin-top: -14px;
+        border: 14px solid transparent;
+        border-right: 14px solid #50d5f1;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p-trainer {
+    &__inner{
+      padding: 50px 15px;
+    }
+    &__title {
+      font-size: 7vw;
+    }
+    &__contents {
+      display: block;
+      padding: 20px 30px;
+      margin: 20px 0;
+      &--img{
+        width: 100%;
+        text-align: center;
+      }
+      &--textarea{
+        width: 100%;
+      }
+      &--name{
+        text-align: center;
+        font-size: 6vw;
+        margin-top: 5px;
+      }
+      &--comment{
+        font-size: 3.8vw;
+        line-height: 1.7;
+      }
+      &--ballon{
+        font-size: 3.8vw;
+        padding: 20px;
+        margin: 20px 0 5px;
+        &::before {
+          top: -11px;
+          left: 46%;
+          margin-top: -13px;
+          border: 13px solid transparent;
+          border-bottom: 13px solid #fff;
+          z-index: 2;
+        }
+        &::after {
+          top: -14px;
+          left: 45.7%;
+          margin-top: -14px;
+          border: 14px solid transparent;
+          border-bottom: 14px solid #50d5f1;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+}

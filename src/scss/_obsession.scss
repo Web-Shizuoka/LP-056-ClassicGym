@@ -1,0 +1,142 @@
+$course-width: 1024px;
+.p-obsession {
+  margin: 0;
+  padding: 50px 0 30px;
+  background-image: url(../img/obsession_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__inner{
+    max-width: $course-width;
+    margin: 0 auto;
+  }
+
+  &__catch-copy {
+    &--main-catch {
+      font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+      font-size: 40px;
+      color: #50d5f1;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
+      line-height: 70px;
+      text-align: left;
+      margin-left: 5%;
+      font-weight: lighter;
+      > .right-x {
+        position: absolute;
+        display: block;
+        bottom: -10%;
+        right: 40%;
+        width: 13%;
+        height: 1px;
+        background: #50d5f1;
+      }
+      > .right-y {
+        position: absolute;
+        display: block;
+        bottom: -25%;
+        right: 42%;
+        height: 60%;
+        width: 1px;
+        background: #50d5f1;
+      }
+      > .left-x {
+        position: absolute;
+        display: block;
+        top: -10%;
+        left: -7%;
+        width: 13%;
+        height: 1px;
+        background: #50d5f1;
+      }
+      > .left-y {
+        position: absolute;
+        display: block;
+        top: -25%;
+        left: -5%;
+        height: 60%;
+        width: 1px;
+        background: #50d5f1;
+      }
+    }
+  }
+  &__text{
+    margin-top: 60px;
+    & img{
+      margin: 10px 0;
+      max-width: 100%;
+    }
+    &-sp {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .p-obsession {
+    padding: 10px 0 30px;
+
+    &__catch-copy {
+
+      &--main-catch {
+        font-size: 6vw;
+        margin-top: 30px;
+        line-height: 10vw;
+        margin-left: 10%;
+        > .right-x {
+          position: absolute;
+          display: block;
+          bottom: -10%;
+          right: 6%;
+          width: 13%;
+          height: 1px;
+          background: #50d5f1;
+        }
+        > .right-y {
+          position: absolute;
+          display: block;
+          bottom: -25%;
+          right: 8%;
+          height: 60%;
+          width: 1px;
+          background: #50d5f1;
+        }
+        > .left-x {
+          position: absolute;
+          display: block;
+          top: -10%;
+          left: -7%;
+          width: 13%;
+          height: 1px;
+          background: #50d5f1;
+        }
+        > .left-y {
+          position: absolute;
+          display: block;
+          top: -25%;
+          left: -5%;
+          height: 60%;
+          width: 1px;
+          background: #50d5f1;
+        }
+      }
+    }
+    &__text{
+      display: none;
+      &-sp {
+        margin-top: 60px;
+        display: block;
+        font-size: 3.5vw;
+        line-height: 1.7;
+        padding: 0 20px;
+        margin-top: 8vw;
+        & img{
+          margin: 10px 0;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

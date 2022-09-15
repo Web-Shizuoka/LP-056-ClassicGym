@@ -1,76 +1,84 @@
+$course-width: 1024px;
 .p-graph {
-  height: 1017px;
-  background-color: #fefefe;
-  &__backgrpund {
-    width: auto;
-    object-fit: cover;
-    object-position: 0% 0%;
-    position: relative;
-    display: block;
-    width: 100%;
+  background-color: #e6fbff;
+  text-align: center;
+  padding: 50px 0;
+  &__inner{
+    max-width: $course-width;
+    margin: 0 auto;
   }
-  &__area {
-    position: relative;
-    top: 0;
-    &--text {
-      position: absolute;
-      text-align: center;
-      top: 69px;
-      left: 399px;
-      font-size: 24.01px;
-      line-height: 2;
-      display: block;
-      &-sp {
-        display: none;
+  &__title{
+    font-size: 60px;
+    color: #50d5f1;
+    font-family: Hiragino Maru Gothic ProN W4,ヒラギノ丸ゴ ProN W4;
+    margin-bottom: 20px;
+  }
+  &__table{
+    margin: 0 auto;
+    font-size: 25.6px;
+    line-height: 42.67px;
+    width: 100%;
+    & th{
+      background-color: #50d5f1;
+      color: #fff;
+      padding: 20px 0;
+    }
+    & td{
+      background-color: #efefef;
+      color: #5c5c5c;
+      padding: 25px 0;
+      font-weight: bold;
+    }
+    & td.pink{
+      background-color: #ffeaf1;
+      color: #fe6999;
+    }
+    & td span.tax{
+      font-size: 17.07px;
+    }
+    &--title{
+      & .pink{
+        background-color: #fe6999;
+      }
+      & .gray{
+        background-color: #565656;
       }
     }
-
-    &--img {
-      margin-top: 33px;
-      background-color: #ffffff;
-      > img {
-        margin: 20px;
-      }
-    }
+  }
+  &__textright{
+    font-size: 20.48px;
+    text-align: right;
+    margin-top: 10px;
+  }
+  & .sp_newline{
+    display: none;
   }
 }
 
 @media screen and (max-width: 750px) {
   .p-graph {
-    height: 100%;
-    background-color: #fefefe;
-    &__backgrpund {
-      width: 100%;
-      object-fit: none;
-      object-position: 0% 0%;
-      position: relative;
-      display: none;
+    padding: 50px 10px;
+    &__title{
+      font-size: 7vw;
+      margin-bottom: 20px;
     }
-    &__area {
-      position: relative;
-      top: 0;
-      &--text {
-        display: none;
-        &-sp {
-          position: relative;
-          text-align: center;
-          top: 0;
-          left: 0;
-          padding: 30px 0;
-          font-size: 4vw;
-          line-height: 1.5;
-          display: block;
-        }
+    &__table{
+      font-size: 3.5vw;
+      line-height: 1.5;
+      width: 100%;
+      & th{
+        padding: 20px 0;
       }
-
-      &--img {
-        margin: 50px 60px 40px 40px;
-        background-color: #ffffff;
-        > img {
-          width: 100%;
-          margin: 0;
-        }
+      & td span.tax{
+        font-size: 2.5vw;
       }
+    }
+    &__textright{
+      font-size: 3vw;
+      margin-top: 10px;
+    }
+    & .sp_newline{
+      display: block;
     }
   }
 }
