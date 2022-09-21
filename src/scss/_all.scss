@@ -12,3 +12,30 @@ body {
 a {
   text-decoration: none;
 }
+
+.decoration-slash {
+  font-family: arial;
+  font-size: 40px;
+  padding: 0 10px;
+  vertical-align: bottom;
+  
+  @media screen and (max-width: 750px) {
+    font-size: 32px;
+  }
+}
+
+.sp-only {
+  display: none;
+  
+  @media screen and (max-width: 750px) {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+  
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}

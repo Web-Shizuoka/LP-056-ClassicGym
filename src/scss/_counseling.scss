@@ -171,6 +171,15 @@
         }
       }
     }
+    
+    &__comic-sp {
+      max-width: 100%;
+      padding: 20px;
+      
+      img {
+        max-width: 100%;
+      }
+    }
   }
 
   .p-after-counseling {
