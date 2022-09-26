@@ -5,6 +5,7 @@ $course-width: 1024px;
   background-image: url(../img/obsession_bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   &__inner{
     max-width: $course-width;
@@ -71,6 +72,14 @@ $course-width: 1024px;
       display: none;
     }
   }
+  &__img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    & .arrow{
+      margin: 10px;
+    }
+  }
 }
 
 
@@ -132,9 +141,24 @@ $course-width: 1024px;
         line-height: 1.7;
         padding: 0 20px;
         margin-top: 8vw;
+      }
+    }
+    &__img{
+      display: block;
+      width: 100%;
+      align-items: center;
+      & img{
+        width: 100%;
+      }
+      & .arrow{
+        text-align: center;
+        margin: 0;
+        height: 25px;
         & img{
-          margin: 10px 0;
-          max-width: 100%;
+          transform: rotate(90deg);
+          width: 15px;
+          height: 40px;
+          margin-top: -9px;
         }
       }
     }

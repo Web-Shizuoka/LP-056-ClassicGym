@@ -145,6 +145,12 @@ $course-width: 1024px;
     & .small4{
       font-size: 22px;
     }
+    & .small5{
+      color: #000;
+      font-size: 13px;
+      display: inherit;
+      margin-top: 10px;
+    }
     &--title {
       & .bg-blue{
         width: 350px;
@@ -291,6 +297,9 @@ $course-width: 1024px;
       }
       & .small4{
         font-size: 4.2vw;
+      }
+      & .small5{
+        font-size: 2.7vw;
       }
       &--title {
         & .bg-blue{

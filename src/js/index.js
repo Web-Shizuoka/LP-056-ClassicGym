@@ -11,3 +11,12 @@ $(window).on("scroll", function () {
     }
   });
 });
+
+$(function(){
+  $('a[href^="#"]').click(function () {
+    var elmHash = $(this).attr('href');
+    var pos = $(elmHash).offset().top;
+    $('html,body').animate({scrollTop: pos},500,"swing");
+    return false;
+  })
+});

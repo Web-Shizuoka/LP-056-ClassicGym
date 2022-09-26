@@ -1,3 +1,6 @@
+.sp_newline{
+  display: none;
+}
 .p-price {
   background-color: #e6fbff;
   text-align: center;
@@ -41,9 +44,13 @@
 }
 
 @media screen and (max-width: 750px) {
+  .sp_newline{
+    display: block;
+  }
   .p-price {
     text-align: center;
     padding: 50px 20px 50px;
+
     &__title {
       font-size: 7vw;
       letter-spacing: 1rem;
@@ -56,7 +63,7 @@
     }
     &__join {
       &--text {
-        font-size: 6vw;
+        font-size: 5vw;
         padding-top: 8vw;
       }
       &--number {
